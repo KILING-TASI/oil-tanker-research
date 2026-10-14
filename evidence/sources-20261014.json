@@ -363,6 +363,18 @@
       "status": "retrieved",
       "reviewedAt": "2026-10-14",
       "authentication": "公司季度新闻稿；已实现现货TCE、已锁定部分和未来现金保本指引分别使用，不替代中国船东口径。"
+    },
+    {
+      "id": "cmes-fy2025",
+      "url": "https://www.cmenergyshipping.com/uploads/report/20260327.pdf",
+      "publishedAt": "2026-03-27",
+      "sha256": "3fe6f99980f9f0c2ac241e2f826660141d118af2fe53eafab49e146ef9464a18",
+      "pages": 246,
+      "tier": "primary",
+      "publisherRoot": "CMES-601872",
+      "status": "retrieved",
+      "reviewedAt": "2026-10-14",
+      "authentication": "公司定期报告目录原年报；核合并报表，不认证资本开支周期归因。"
     }
   ],
   "rights": "Raw third-party PDFs/pages stay in local evidence storage; repository contains facts, source metadata and original analysis only."

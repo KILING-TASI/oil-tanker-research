@@ -51,5 +51,52 @@
       "value": 100,
       "publishedAt": "2026-03-31"
     }
+  },
+  "profitInverse": {
+    "target": {
+      "symbol": "EXAMPLE",
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "scope": "single segment",
+      "profitDefinition": "attributable net",
+      "profitUnit": "CNY",
+      "taxBasis": "after-tax",
+      "ownershipBasis": "attributable",
+      "value": 120
+    },
+    "anchor": {
+      "symbol": "EXAMPLE",
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "scope": "single segment",
+      "profitDefinition": "attributable net",
+      "profitUnit": "CNY",
+      "taxBasis": "after-tax",
+      "ownershipBasis": "attributable",
+      "route": "same-route",
+      "tceDefinition": "realised-spot",
+      "tceUnit": "USD/day"
+    },
+    "sensitivity": {
+      "symbol": "EXAMPLE",
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "scope": "single segment",
+      "profitDefinition": "attributable net",
+      "profitUnit": "CNY",
+      "taxBasis": "after-tax",
+      "ownershipBasis": "attributable",
+      "route": "same-route",
+      "tceDefinition": "realised-spot",
+      "tceUnit": "USD/day",
+      "value": 2
+    },
+    "baselineTce": 100,
+    "baselineProfit": 100,
+    "validTceRange": [
+      80,
+      120
+    ],
+    "otherFactorsHeldConstant": true
   }
 }

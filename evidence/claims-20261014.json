@@ -2,21 +2,21 @@
   "reviewedAt": "2026-10-14",
   "scope": "791项可定位文本核对单元，另125项图表固定输入；含重复及复合论证，不等于独立事实个数。全部登记处理状态，但未取得原始记录的条目不能称取证完成。",
   "counts": {
-    "unverified": 709,
+    "unverified": 678,
     "scope-error": 22,
     "secondary-only": 22,
-    "withdrawn-inference": 22,
+    "withdrawn-inference": 31,
     "partial-benchmark": 4,
-    "supported-disclosure": 58,
-    "recomputed": 6,
-    "needs-definition": 15,
-    "recomputed-vendor": 3,
+    "supported-disclosure": 59,
+    "recomputed": 7,
+    "needs-definition": 23,
+    "recomputed-vendor": 14,
     "partial-disclosure": 9,
     "supported-presentation": 16,
     "contradicted": 9,
     "period-conflict": 14,
-    "partial-vendor": 4,
-    "arithmetic-error": 3
+    "arithmetic-error": 4,
+    "partial-vendor": 4
   },
   "frozenReports": [
     {
@@ -4408,15 +4408,22 @@
       "tag": "td",
       "context": "招商轮船 601872 | 2025 全年 capex",
       "original": "77.97 亿元",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2025年报第108页购建固定资产、无形资产等长期资产支付现金7,796,879,055.42元，折合77.97亿元。不等于新签造船订单或全部投资支出。",
+      "sources": [
+        "cmes-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourcePages": {
+        "cmes-fy2025": [
+          108
+        ]
+      }
     },
     {
       "id": "d-0219",
@@ -6316,15 +6323,20 @@
       "tag": "div",
       "context": "",
       "original": "验算一（船队规模法，验证国金的 12.11 亿是否为年化口径）： · 若只算 VLCC 51 艘 × 365 天 × 1 万美元 = 1.86 亿美元 ≈ 13.2 亿元人民币（税前，汇率 7.1），税后约 9.9–11.2 亿 —— 略低于 12.11 亿。 · 若按全油轮船队（VLCC 51 + Aframax 等）等效约 60 艘计：60 × 365 × 1 万 = 2.19 亿美元 ≈ 15.5 亿元（税前），税后约 11.6 亿 —— 与 12.11 亿吻合。 结论：国金的 12.11 亿是\"全油轮船队、年化、税后\"口径。若按半年计，约 6.06 亿元。 验算二（业绩反推法，独立验证）： · 2026H1 油轮板块净利 61.89 亿，同比 +378.62% → 2025H1 为 12.93 亿， 增量 48.96 亿元（半年口径） 。 · 同期 VLCC 运价：2026H1 招商轮船美湾/西非均值 10.6 万 / 11.3 万美元/天；2025H1 参照 Frontline Q1'25 3.72 万、Q2'25 4.31 万，取其均值约 4.0–4.5 万 → 价差约 6.3–6.8 万美元/天 。 · 48.96 亿 ÷ 6.55 万 ≈ 7.5 亿元/(万美元/天)（半年） → 年化约 15 亿元 。 结论：两条路径得到 12.11 亿（券商）与 15 亿（自算），同量级、偏差在 25% 以内。弹性数量级可信，但绝对值不宜精确使用 ——差异来自税率、Aframax 贡献、年内新船交付导致的艘数变化。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "相近反算结果不能证明券商系数的实际期间、税费或船型范围；跨公司TCE与分部利润混用不是独立验证。撤回“全油轮、年化、税后已验证”。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "来源：Frontline 2026 年 SEC 披露与业绩材料（现金保本 23,800 美元/天，含 7 艘船坞修；船队 opex 8,700 美元/天不含坞修；Q2 2026 VLCC 现货 TCE 152,700；1 年期租 76,900–120,000）；Kpler 长期常态 45,000；TD3C 现货为东方财富周报 10-09 口径 137 万。转引自 Ship Universe、Lighthouse Canton、Fairway ETA。 非一手，需核原文。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0311",
@@ -6335,15 +6347,20 @@
       "tag": "div",
       "context": "",
       "original": "最重要的发现：四重交叉验证指向同一个数——13.5 万美元/天。 用弹性反推卖方 2026 年一致预期所隐含的运价假设： · 招商轮船：166.03 亿 ÷ 12.11 亿 = 13.71 万美元/天 · 中远海能：123.87 亿 ÷ 9.52 亿 = 13.01 万美元/天 对照另外三个独立来源： · 摩根大通 2026 年基准假设： 13.5 万美元/天 · VLCC 1 年期租实际成交： 13.51 万美元/天 · 卖方盈利预测隐含值： 13.0–13.7 万美元/天 四个完全独立的口径落在 13.0–13.7 万美元/天这个极窄区间内。 这就是市场共识认定的\"正常化运价中枢\"。而当前 TD3C 现货 137 万美元/天，是它的 约 10 倍 。 换句话说： 没有任何一个专业机构是用 137 万在做盈利预测的。 所有人都在用 13.5 万。股价按 PB 历史极值（98.8 分位）定价，隐含的却是远超一致预期的假设。 这是全篇最硬的矛盾，而且现在它是可计算的，不再是定性判断。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "净利润除边际敏感性缺基准利润、基准运价及其他业务桥接；相近报价不证明来源独立或全市场共识。PB分位也不反推出股价隐含运价。撤回13.5万确定共识和“所有人都在用”。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "来源：Frontline 2026 年 SEC 披露与业绩材料（现金保本 23,800 美元/天，含 7 艘船坞修；船队 opex 8,700 美元/天不含坞修；Q2 2026 VLCC 现货 TCE 152,700；1 年期租 76,900–120,000）；Kpler 长期常态 45,000；TD3C 现货为东方财富周报 10-09 口径 137 万。转引自 Ship Universe、Lighthouse Canton、Fairway ETA。 非一手，需核原文。",
       "searchFamily": "valuation",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "原行情/净资产版本、PB序列、机构或南向持仓明细、精确起止/复权和窗口未取得；当前第三方页面不能重现旧盘中快照。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0312",
@@ -6354,15 +6371,20 @@
       "tag": "div",
       "context": "",
       "original": "\"运价跌到多少利润归零\"——现在可以回答了： · 现金保本线：2.38 万美元/天。 跌到这里 VLCC 不亏现金。当前 137 万需下跌 98.3% 才触及——短期不是风险。 · 利润回到 2025 年水平（60 亿）： 需从 2026E 166 亿减少 106 亿，按 12.11 亿/(万) 的年化弹性，对应 TCE 下降约 8.75 万美元/天 ，即从共识中枢 13.7 万跌到 约 5 万美元/天 （仍高于现金保本 2.38 万，接近 Kpler 长期常态 4.5 万）。 · 更现实的风险路径： 不是跌到保本，而是从 137 万回落到 13.5 万的共识中枢——这个跌幅是 90% 。按弹性算，年化利润影响约 1,495 亿元。当然这是线性外推的极端值，实际会因长协锁价、成本联动而钝化，但它说明一件事： 当前股价对\"运价回归中枢\"这件事几乎没有容错空间。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "Frontline前瞻现金保本不是中国船东会计保本；未确认弹性与单日航线值不可跨极端区间外推公司利润。撤回5万利润回归点、1495亿影响及无容错空间结论。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "来源：Frontline 2026 年 SEC 披露与业绩材料（现金保本 23,800 美元/天，含 7 艘船坞修；船队 opex 8,700 美元/天不含坞修；Q2 2026 VLCC 现货 TCE 152,700；1 年期租 76,900–120,000）；Kpler 长期常态 45,000；TD3C 现货为东方财富周报 10-09 口径 137 万。转引自 Ship Universe、Lighthouse Canton、Fairway ETA。 非一手，需核原文。",
       "searchFamily": "valuation",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "原行情/净资产版本、PB序列、机构或南向持仓明细、精确起止/复权和窗口未取得；当前第三方页面不能重现旧盘中快照。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0313",
@@ -8482,15 +8504,20 @@
       "tag": "div",
       "context": "",
       "original": "路径一（用 Q2 单季）： Q2 油轮分部净利 37.03 亿，对应实际 TCE 13.5 万美元/天；弹性 12.11 亿/年 → 季度弹性 3.03 亿/(万美元)。年化 37.03×4 = 148.1 亿 = (13.5 − BE) × 12.11 → BE ≈ 1.28 万美元/天 。 路径二（用 H1）： H1 油轮净利 61.89 亿，半年弹性 6.06 亿/(万美元)；若 H1 平均 TCE 约 11.5 万 → 11.5 − 61.89/6.06 = BE ≈ 1.29 万美元/天 。 路径三（用我上一版自算的 15 亿弹性）： BE = 13.5 − 148.1/15 = 3.63 万美元/天 。 结论：招商轮船 breakeven 落在 1.3–3.6 万美元/天区间，取决于弹性取 12.11 亿还是 15 亿。 这个区间宽度本身就说明一件事—— 弹性口径的误差，比 breakeven 本身的误差对结论影响更大。 我建议实际使用中远海能的 2.4 万作为行业参照，因为它有官方弹性表交叉验证；招商轮船的数字应视为区间而非点估计。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "市场TCE代替公司实际TCE，未经确认的系数年化单季，不能认证1.3–3.6万公司保本。官方边际敏感性不提供利润截距；不推荐社媒2.4万为行业保本线。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0406",
@@ -8917,15 +8944,20 @@
       "tag": "div",
       "context": "",
       "original": "对上一版的一处修正：9.52 亿不是全船队弹性，只是 VLCC。 上一版我用\"中远海能 123.87 亿 ÷ 9.52 亿 = 13.01 万美元/天\"反推隐含中枢。官方表出来后发现问题： 9.34（或 9.52）亿只是 VLCC 单一船型的弹性；含阿芙拉、LR1、LR2、灵便型的全外贸油轮弹性是 17.95 亿，是 VLCC 的 1.92 倍。 用 VLCC 弹性去反推全公司净利，分子分母口径不匹配。 重算（三档，对\"其他板块贡献\"高度敏感）： · 上版口径： 123.87 ÷ 9.52 = 13.01 万 （未扣保本点、未扣其他板块） · 修正一（VLCC 弹性 + 保本 2.4 万 + 内贸/LNG 等贡献约 38 亿）： 2.4 + (123.87 − 38)/9.34 = 11.59 万 · 修正二（全外贸弹性 17.95 亿 + 保本 2.4 万 + 其他约 20 亿）： 2.4 + (123.87 − 20)/17.95 = 8.19 万 隐含中枢从\"13.0–13.7 万\"下移到 8–12 万区间，而且区间宽度取决于假设。 上一版把区间说得太窄、太确定了。正确的表述是： 卖方 2026E 隐含的 VLCC 运价假设大约在 8–12 万美元/天，中值约 10 万 ——这个数反而与 FFA Cal-28 的 8.3 万、2–3 年期租的 8.0 万、Frontline 卖船隐含的 7.0 万 站在同一侧 。 换句话说： 修正之后，\"长期中枢\"那一簇数字整体落在 7–10 万，而\"1 年期租 + 卖方 2026E\"恰好落在 13.5 万是个偏乐观的锚。 这对判断安全边际是方向性的改变。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "官方六项和17.9367亿元，未明示期间或税前/税后，不能擅作全年归母。20/38亿其他业务与2.4万基准未经认证，反推8–12万不是卖方实际假设或市场共识。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0423",
@@ -8959,15 +8991,20 @@
       "tag": "div",
       "context": "",
       "original": "\"运价跌到多少利润归零\"——用中国口径重新回答： · 中远海能： VLCC TCE 跌到 2.4 万美元/天 ，VLCC 板块利润归零。当前现货 137 万需下跌 98.2% 。若跌到 FFA Cal-28 隐含的 8.3 万，VLCC 板块利润仍有 (8.3−2.4)×9.34 = 55.1 亿元 —— 依然赚钱，只是不再暴利。 · 招商轮船： 保本区间 1.3–3.6 万美元/天，当前现货需下跌 97.4%–99.1%。 所以真正的风险不是\"跌到保本\"，而是\"从 137 万回到 8–12 万\"——跌幅 91%–94%。 在这个跌幅下，两家公司仍然盈利（中远海能 VLCC 板块 55 亿量级），但股价若按当前 PB 98.8 分位定价， 这一跌就是估值与业绩的双杀 。这是全篇需要盯住的核心风险，而它现在有了明确的数字边界。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "2.4万基准、年化归属系数和FFA航线未统一；(8.3−2.4)×9.34只是旧假设乘法，不能认证55.1亿利润或两家公司仍盈利。现货至远期跌幅不等于股价双杀概率。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "valuation",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "原行情/净资产版本、PB序列、机构或南向持仓明细、精确起止/复权和窗口未取得；当前第三方页面不能重现旧盘中快照。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0425",
@@ -10025,15 +10062,20 @@
       "tag": "div",
       "context": "",
       "original": "核查后，全篇结论需要调整的地方只有一处，方向不变但幅度打折： · 不变： 景气是真的、只在外贸原油、量在萎缩、供给墙在 2028、机构在减持、估值处历史极值。 · 调整： \"当前运价偏离中枢 10 倍\"→ 综合口径 6.3 倍 （TD3C 单航线 10 倍，但因有价无市，不可直接用作盈利基准）。 · 新增风险： 2026H1 船队净增 1,455 万 DWT（+89.4%）、交付 +77.2%—— 供给不是\"刚性停滞\"，而是在加速净增长 ，只是增速仍低于运距拉长带来的吨海里需求增量。 · 新增拐点信号（补第十四节）： 期租市场 10-06 当周 无新增成交 。结合航运星球\"中东租船活动异常安静\"，这是比现货更早的领先信号—— 租家不愿锁长期，说明他们认为当前价不可持续。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "只在外贸原油、需求萎缩及2028交付墙不是已验证全局判断。无新增期租成交不等于租家预期价格下跌，还需总体覆盖、窗口、询盘与撤单。撤回只需改一处的认证。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "来源：波罗的海交易所日报（Optima Shipbroking，2026-10-07 发布，数据基准 10-06 16:00 London）；上海航运交易所《2026（年中）水运形势报告——外贸油轮市场》（2026-08-27，引克拉克森）；《国际油轮运输市场月度报告（2026.07）》（2026-08-04）；国盛证券交运周报（2026-10-11）；国信证券《中远海能-全球能源海运龙头》运价五维框架；《油运行业研究框架》（2026-08-16）；全球油运市场格局专题报告（引克拉克森）。 除波罗的海日报外均为转引。",
       "searchFamily": "freight",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0481",
@@ -10481,15 +10523,15 @@
       "tag": "li",
       "context": "",
       "original": "报告第十一节提到\"公司实现值约为市场评估值的 79 折\"——但这只能解释 21% 的落差，解释不了 10 倍。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
+      "status": "arithmetic-error",
+      "ruling": "“79折”应为“0.79倍（七九折）”；比值0.79对应比基准低21%。这里只纠正文义和百分比，不认证0.79来源或公司/市场评估口径。",
       "sources": [],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "0.79同公司同期间原始比值仍未取得。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0505",
@@ -10690,15 +10732,20 @@
       "tag": "div",
       "context": "",
       "original": "仍然成立（依赖可独立验证的数据）： ① 景气真实但已被极端定价——依据是 PB 98.8 / 91.7 分位；② VLCC 与成品油极端背离——依据是毛利率 +18.51pct vs +0.98pct；③ 机构与南向在减持——依据是基金持股数与港股通持股变动（金额已修正，方向与量级仍成立）；④ 供给交付墙落在 2028 年。 被削弱或撤回（依赖存疑数据或错误算术）： ① \"偏离中枢 6.3 倍\"→ 本条自查结论本身有误，已在第十八节二次修正：正确基准是年度均值 19.5 万（不是 H1 的 11.3 万），偏离应为 1.4–2.4 倍 ；② \"回本 0.4 年\"→ 修正为 0.27 年 ，但对比的\"17.2 年\"应改为 8.1 年 ，落差从 43 倍缩至 30 倍 ；③ \"单船年 EBITDA 超过整船购买价\"→ 撤回 ；④ \"有效运力缺口 35%\"→ 修正为 25–29% 。 最大的系统性风险： 全文两个基石数字（TD3C 141 万、FFA Cal-27 33.5 万）均为历史极值的 3–5 倍。 【第十八节核验后更新】TD3C 141 万已获多来源交叉证实（含英文 Baltic 口径），从\"待证实\"升级为\"可用\"；FFA Cal-28 8.3 万则被发现是 TD22 航线口径，与 TD3C 错配。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "PB复算不认证极端定价；半年对全年毛利率差不证明当期船型分化；已取得披露不能认证缺失的持仓序列。航线错配、同源转引不能称全部独立核实。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "valuation",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "原行情/净资产版本、PB序列、机构或南向持仓明细、精确起止/复权和窗口未取得；当前第三方页面不能重现旧盘中快照。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0516",
@@ -11431,15 +11478,17 @@
       "tag": "p",
       "context": "",
       "original": "以 2026Q2 为基准做线性外推（Q2 油轮净利 37.03 亿、对应 TCE 约 11.5 万、breakeven 2.4 万）：",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "旧表为单季利润随TCE比例缩放的情景，缺公司实际基准、经营船日、锁价/租约分成、成本及非油轮归母桥接。不能认证季度或全年盈利，也不能用未取得的Q3实际值认证情景。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "需原模型与冻结预测日期、公司分部季度实际资料；算术相符不等于情景真实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0555",
@@ -11450,15 +11499,17 @@
       "tag": "td",
       "context": "13.4 万（ 卖方 166 亿隐含 H2 均值 ） | Q4 油轮净利",
       "original": "约 45 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "旧表为单季利润随TCE比例缩放的情景，缺公司实际基准、经营船日、锁价/租约分成、成本及非油轮归母桥接。不能认证季度或全年盈利，也不能用未取得的Q3实际值认证情景。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "需原模型与冻结预测日期、公司分部季度实际资料；算术相符不等于情景真实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0556",
@@ -11469,15 +11520,17 @@
       "tag": "td",
       "context": "13.4 万（ 卖方 166 亿隐含 H2 均值 ） | 2026 全年归母（估）",
       "original": "约 208 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "旧表为单季利润随TCE比例缩放的情景，缺公司实际基准、经营船日、锁价/租约分成、成本及非油轮归母桥接。不能认证季度或全年盈利，也不能用未取得的Q3实际值认证情景。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "需原模型与冻结预测日期、公司分部季度实际资料；算术相符不等于情景真实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0557",
@@ -11488,15 +11541,17 @@
       "tag": "td",
       "context": "13.4 万（ 卖方 166 亿隐含 H2 均值 ） | 对比卖方 166 亿",
       "original": "+25%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "旧表为单季利润随TCE比例缩放的情景，缺公司实际基准、经营船日、锁价/租约分成、成本及非油轮归母桥接。不能认证季度或全年盈利，也不能用未取得的Q3实际值认证情景。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "需原模型与冻结预测日期、公司分部季度实际资料；算术相符不等于情景真实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0558",
@@ -11507,15 +11562,17 @@
       "tag": "td",
       "context": "27.8 万（ 与 Q3 实际持平 ） | Q4 油轮净利",
       "original": "约 103 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "旧表为单季利润随TCE比例缩放的情景，缺公司实际基准、经营船日、锁价/租约分成、成本及非油轮归母桥接。不能认证季度或全年盈利，也不能用未取得的Q3实际值认证情景。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "需原模型与冻结预测日期、公司分部季度实际资料；算术相符不等于情景真实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0559",
@@ -11526,15 +11583,17 @@
       "tag": "td",
       "context": "27.8 万（ 与 Q3 实际持平 ） | 2026 全年归母（估）",
       "original": "约 283 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "旧表为单季利润随TCE比例缩放的情景，缺公司实际基准、经营船日、锁价/租约分成、成本及非油轮归母桥接。不能认证季度或全年盈利，也不能用未取得的Q3实际值认证情景。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "需原模型与冻结预测日期、公司分部季度实际资料；算术相符不等于情景真实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0560",
@@ -11545,15 +11604,17 @@
       "tag": "td",
       "context": "27.8 万（ 与 Q3 实际持平 ） | 对比卖方 166 亿",
       "original": "+70%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "旧表为单季利润随TCE比例缩放的情景，缺公司实际基准、经营船日、锁价/租约分成、成本及非油轮归母桥接。不能认证季度或全年盈利，也不能用未取得的Q3实际值认证情景。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "需原模型与冻结预测日期、公司分部季度实际资料；算术相符不等于情景真实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0561",
@@ -11564,15 +11625,17 @@
       "tag": "td",
       "context": "60 万（10 月初市场整体水平） | Q4 油轮净利",
       "original": "约 234 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "旧表为单季利润随TCE比例缩放的情景，缺公司实际基准、经营船日、锁价/租约分成、成本及非油轮归母桥接。不能认证季度或全年盈利，也不能用未取得的Q3实际值认证情景。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "需原模型与冻结预测日期、公司分部季度实际资料；算术相符不等于情景真实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0562",
@@ -12226,15 +12289,20 @@
       "tag": "div",
       "context": "",
       "original": "三轮下来，报告的变化轨迹值得单独说明： 第十七节自查 → 抓出 2 个确凿错误、4 处算术错误； 第十八节核验 → 却发现 自查本身也错了 （用了过时的 H1 数据），并推翻了「极值=见顶」的假设； 第十九节补射 → 又发现 核验方法本身有问题 （伪独立验证、双重标准）。 这说明一件事：纠错过程是收敛的，但每一轮都会引入新的、更隐蔽的错误。 三轮之后，报告里可被证伪的硬错误已大幅减少，但 「转引未经一手验证」这一条始终没有被解决 ——包括我自己补进去的数据。 被补射推翻或降级： ① TD3C 141.26 万从「已证实」降回 「转引可靠，未见一手」 ；② 「10 月 FFA 60–70 万」 作废 （克拉克森口径为 18.1 万）；③ 「当前涨幅尚未极端透支」 作废 （对比口径不一致）；④「极值后必有第二波」降级为 条件命题 ；⑤ 报告中「一年涨 153%」 两处均错 （实际 +139.3% / +77.1%）。 被补射强化： ① 卖方预测严重滞后（由克拉克森 Q3 官方均值 27.8 万坐实，隐含 Q4 假设仅约 6.7 万）；② 「高运价不可持续」现在有了一手级证据——FFA Q4 仅 18.1 万 ，这比报告里所有定性论述都更有力；③ 供给压力有限（订单簿仅占船队 23%，官方数据）。 一句话：本报告最有价值的结论，现在可以用一个数字表达——现货 141 万，而市场自己给 Q4 定的价是 18.1 万。 这个 7.8 倍的 gap，就是全部风险所在。",
-      "status": "unverified",
-      "ruling": "旧版认证表述降级：本轮没有取得此主张的完整原始序列/公告定位；不能沿用“已核清”。",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "单日TD3C和Q4合约报价7.8倍差，航线与窗口未统一。FFA不是保证未来实现均价或价格不可持续的一手证明。Clarksons原始完整序列未取得，撤回官方已坐实、全部风险和纠错已收敛。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-presentation-h1-2026",
+        "frontline-q2-2026",
+        "baltic-settlement"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "freight",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "复合单元中的券商假设、TCE、持仓、远期报价原始快照仍有缺口；撤回推断不等于原数字全部核实。",
+      "auditMode": "manual inference audit; raw facts and arithmetic separated"
     },
     {
       "id": "d-0596",
@@ -17132,14 +17200,22 @@
       "tag": "script",
       "context": "chart_gm | 2025 全年毛利率 | 招商轮船 601872",
       "original": "26.47",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed",
+      "ruling": "2025年报第103页合并收入28177211131.95元、营业成本20717507250.47元；毛利率复算26.474245%，两位小数26.47%。半年对全年之差不是同比。",
+      "sources": [
+        "cmes-fy2025"
+      ],
       "searchFamily": "chart-series",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "cmes-fy2025": [
+          103
+        ]
+      }
     },
     {
       "id": "d-chart-0053",
@@ -17477,13 +17553,20 @@
       "context": "chart_order | 交付/计划交付 | 2026E",
       "original": "28",
       "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "ruling": "目视核公司推介p13：VLCC为2026年13、2027年67、2028及以后222；28是LR1的2027、64是LR2的2027、102是MR的2027。不能按数值相近给旧VLCC年度图补证。图转引Clarksons，原版本/时点与旧图未统一，旧预测仍未取证。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          13
+        ]
+      }
     },
     {
       "id": "d-chart-0070",
@@ -17495,13 +17578,20 @@
       "context": "chart_order | 交付/计划交付 | 2027E",
       "original": "64",
       "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "ruling": "目视核公司推介p13：VLCC为2026年13、2027年67、2028及以后222；28是LR1的2027、64是LR2的2027、102是MR的2027。不能按数值相近给旧VLCC年度图补证。图转引Clarksons，原版本/时点与旧图未统一，旧预测仍未取证。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          13
+        ]
+      }
     },
     {
       "id": "d-chart-0071",
@@ -17513,13 +17603,20 @@
       "context": "chart_order | 交付/计划交付 | 2028E",
       "original": "102",
       "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "ruling": "目视核公司推介p13：VLCC为2026年13、2027年67、2028及以后222；28是LR1的2027、64是LR2的2027、102是MR的2027。不能按数值相近给旧VLCC年度图补证。图转引Clarksons，原版本/时点与旧图未统一，旧预测仍未取证。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          13
+        ]
+      }
     },
     {
       "id": "d-chart-0072",
@@ -17531,13 +17628,20 @@
       "context": "chart_order | 交付/计划交付 | 2029E",
       "original": "44",
       "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "ruling": "目视核公司推介p13：VLCC为2026年13、2027年67、2028及以后222；28是LR1的2027、64是LR2的2027、102是MR的2027。不能按数值相近给旧VLCC年度图补证。图转引Clarksons，原版本/时点与旧图未统一，旧预测仍未取证。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          13
+        ]
+      }
     },
     {
       "id": "d-chart-0073",
@@ -17549,13 +17653,20 @@
       "context": "chart_order | 交付/计划交付 | 2030E+",
       "original": "6",
       "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "ruling": "目视核公司推介p13：VLCC为2026年13、2027年67、2028及以后222；28是LR1的2027、64是LR2的2027、102是MR的2027。不能按数值相近给旧VLCC年度图补证。图转引Clarksons，原版本/时点与旧图未统一，旧预测仍未取证。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          13
+        ]
+      }
     },
     {
       "id": "d-chart-0074",
@@ -18246,14 +18357,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 1 年 | 中远海能 PB 2.58",
       "original": "80.3",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度600026“近一年”实际窗口2025-10-14至2026-10-13，365点，严格小于分位80.273973%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-600026-1y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0109",
@@ -18264,14 +18378,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 1 年 | 招商轮船 PB 3.67",
       "original": "94.2",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度601872“近一年”实际窗口2025-10-14至2026-10-13，365点，严格小于分位94.246575%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-601872-1y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0110",
@@ -18282,14 +18399,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 1 年 | 招商南油 PB 1.74",
       "original": "64.4",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度601975“近一年”实际窗口2025-10-14至2026-10-13，365点，严格小于分位64.383562%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-601975-1y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0111",
@@ -18300,14 +18420,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 3 年 | 中远海能 PB 2.58",
       "original": "93.4",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度600026“近三年”实际窗口2023-10-14至2026-10-13，1096点，严格小于分位93.430657%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-600026-3y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0112",
@@ -18318,14 +18441,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 3 年 | 招商轮船 PB 3.67",
       "original": "98.1",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度601872“近三年”实际窗口2023-10-14至2026-10-13，1096点，严格小于分位98.083942%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-601872-3y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0113",
@@ -18336,14 +18462,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 3 年 | 招商南油 PB 1.74",
       "original": "75.2",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度601975“近三年”实际窗口2023-10-14至2026-10-13，1096点，严格小于分位75.182482%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-601975-3y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0114",
@@ -18354,14 +18483,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 5 年 | 中远海能 PB 2.58",
       "original": "90.9",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度600026“近五年”实际窗口2021-10-15至2026-10-13，913点，严格小于分位90.909091%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-600026-5y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0115",
@@ -18392,14 +18524,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 5 年 | 招商南油 PB 1.74",
       "original": "55.6",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度601975“近五年”实际窗口2021-10-15至2026-10-13，913点，严格小于分位55.640745%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-601975-5y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0117",
@@ -18410,14 +18545,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 10 年 | 中远海能 PB 2.58",
       "original": "95.8",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度600026“近十年”实际窗口2016-10-15至2026-10-13，731点，严格小于分位95.759234%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-600026-10y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0118",
@@ -18428,14 +18566,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 10 年 | 招商轮船 PB 3.67",
       "original": "99.3",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度601872“近十年”实际窗口2016-10-15至2026-10-13，731点，严格小于分位99.316005%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-601872-10y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0119",
@@ -18446,14 +18587,17 @@
       "tag": "script",
       "context": "chart_pbwin | 近 10 年 | 招商南油 PB 1.74",
       "original": "37.9",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed-vendor",
+      "ruling": "百度601975“近十年”实际窗口2019-01-11至2026-10-13，709点，严格小于分位37.940762%，一位小数与旧图相符。观察日2026-10-13，取数日2026-10-14，非原盘中冻结；日历/稀疏采样不冒称逐交易日，南油十年实际从2019年开始。不能认证NeoData、过度定价或下跌概率。",
+      "sources": [
+        "baidu-601975-10y"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual inference audit; raw facts and arithmetic separated",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "s-chart-0120",

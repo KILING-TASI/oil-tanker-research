@@ -61,7 +61,7 @@ def exposure_bridge(p):
 def review(p):
     if not isinstance(p,dict):raise ValueError('输入必须为对象')
     results={}
-    for key,fn in [('margin',margin_compare),('freight',freight_error),('sources',source_roots),('exposure',exposure_bridge),('valuation',valuation_series),('identity',identity_compare)]:
+    for key,fn in [('margin',margin_compare),('freight',freight_error),('sources',source_roots),('exposure',exposure_bridge),('valuation',valuation_series),('identity',identity_compare),('profitInverse',profit_inverse)]:
         if key in p:results[key]=fn(p[key])
     if not results:raise ValueError('至少提供一项核对')
     return {'status':'comparison-guards','sourceVerified':False,'results':results}
@@ -104,6 +104,31 @@ def identity_compare(p):
     delta=number(number(a['value'],'claim value')-number(b['value'],'evidence value'),'computed difference')
     tolerance=number(p.get('absoluteTolerance',0),'absoluteTolerance',0)
     return {'status':'declared-match' if abs(delta)<=tolerance else 'declared-value-conflict','difference':delta,'tolerance':tolerance,'sourceVerified':False,'limits':'声明字段匹配，不认证原文真伪、权益实施到账或因果；不要擅自填写未知期间/税费'}
+
+def profit_inverse(p):
+    """Invert an explicitly anchored local scenario, never profit divided by slope."""
+    target=p['target'];anchor=p['anchor'];slope=p['sensitivity']
+    keys=('symbol','start','end','scope','profitDefinition','profitUnit','taxBasis','ownershipBasis')
+    mismatch=[]
+    for key in keys:
+        values=[row.get(key) for row in (target,anchor,slope)]
+        if any(not isinstance(v,str) or not v.strip() or v in ('unknown','未知') for v in values) or len(set(values))!=1:mismatch.append(key)
+    if mismatch:return {'status':'blocked','mismatchFields':mismatch,'reason':'目标利润、基准利润和敏感性的公司/业务/期间/税费/归属口径缺失或不一致'}
+    for row in (target,anchor,slope):period(row)
+    rate_keys=('route','tceDefinition','tceUnit')
+    if any(not isinstance(anchor.get(k),str) or not anchor[k].strip() or anchor[k]!=slope.get(k) for k in rate_keys):
+        return {'status':'blocked','reason':'敏感性和基准TCE航线/定义/单位不一致'}
+    if any(p.get(k) is None for k in ('baselineTce','baselineProfit','validTceRange')):
+        return {'status':'blocked','reason':'缺基准TCE、基准利润或局部适用区间；净利润不能直接除以敏感性'}
+    if p.get('otherFactorsHeldConstant') is not True:return {'status':'blocked','reason':'未声明其他因素保持不变'}
+    bounds=p['validTceRange']
+    if not isinstance(bounds,list) or len(bounds)!=2:raise ValueError('validTceRange需两个边界')
+    lo=number(bounds[0],'range low',0);hi=number(bounds[1],'range high',lo)
+    base=number(p['baselineTce'],'baselineTce',0);profit=number(p['baselineProfit'],'baselineProfit');goal=number(target['value'],'target profit');coef=number(slope['value'],'sensitivity',.000001)
+    if not lo<=base<=hi:return {'status':'blocked','reason':'基准运价超出声明适用区间'}
+    result=number(base+(goal-profit)/coef,'implied TCE')
+    if not lo<=result<=hi:return {'status':'blocked','reason':'反推结果超出局部适用区间，禁止跨极端区间线性外推'}
+    return {'status':'conditional-local-scenario','impliedTce':result,'sourceVerified':False,'limits':'仅计算声明的有基准线性情景，不认证公司利润、市场共识、会计保本或安全边际'}
 
 def main():
     ap=argparse.ArgumentParser(description='口径和来源链反例核对，不认证证据');ap.add_argument('--input',required=True);args=ap.parse_args()

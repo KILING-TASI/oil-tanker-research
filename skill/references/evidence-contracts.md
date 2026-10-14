@@ -13,3 +13,5 @@
 不要把范围未知填成零，或把转载、原文取得、算术复算、预测和投资结论合并成一个“已核实”。股票代码与公司全称也须核对，不能将中远海能600026与其他中远系公司混淆。身份、来源真伪和真实历史可得性仍须人工证据。
 
 - `identity`：asOf、claim、evidence；两对象各含symbol、start/end、metric、unit、definition、value；evidence另含publishedAt。公司、完整期间、指标、单位及定义必须相同；证据不得晚于研究时点。absoluteTolerance可声明绝对误差（默认0），输出差额，不认证来源。不得把年报贴为半年报，或交换两家分红。未知税费/期间不填写为默认值。
+
+- `profitInverse`：反推运价仅用于有基准的局部情景。target、anchor、sensitivity各声明symbol、start/end、scope、profitDefinition、profitUnit、taxBasis、ownershipBasis且一致；anchor和sensitivity另声明相同route、tceDefinition、tceUnit。target.value为目标利润，sensitivity.value为每1个tceUnit变化对应的profitUnit变化。根对象另含baselineTce、baselineProfit、validTceRange（低/高边界）及otherFactorsHeldConstant=true。计算为基准运价＋（目标利润−基准利润）/系数。基准缺失、未知税费、归属不一、全公司利润配单船型系数或超出局部范围均阻断。通过只代表声明情景可计算，不认证共识、真实保本或可投资性。
