@@ -20,8 +20,8 @@ def margin_compare(p):
     if (cs.month,cs.day,ce.month,ce.day)!=(ps.month,ps.day,pe.month,pe.day) or cs.year!=ps.year+1 or ce.year!=pe.year+1:return {'status':'blocked','reason':'不是同一年度窗口的同比；半年不能对全年'}
     if prior.get('restatementStatus') not in ('restated','not-required'):return {'status':'blocked','reason':'上期重述状态未知'}
     rev=number(current['revenue'],'revenue',.000001);cost=number(current['cost'],'cost',0);prev=number(prior['revenue'],'prior revenue',.000001);pcost=number(prior['cost'],'prior cost',0)
-    cur=(rev-cost)/rev;old=(prev-pcost)/prev
-    return {'status':'conditional-comparison','currentMargin':cur,'priorMargin':old,'changePctPoints':(cur-old)*100,'limits':'简单毛利率，不含其他税费；不识别收益因果或公司净利润'}
+    cur=number((rev-cost)/rev,'computed current margin');old=number((prev-pcost)/prev,'computed prior margin');delta=number((cur-old)*100,'computed margin change')
+    return {'status':'conditional-comparison','currentMargin':cur,'priorMargin':old,'changePctPoints':delta,'limits':'简单毛利率，不含其他税费；不识别收益因果或公司净利润'}
 
 def freight_error(p):
     forecast=p['forecast'];realized=p['realized'];fs,fe=period(forecast);rs,re=period(realized);asof=date.fromisoformat(p['asOf']);quote=date.fromisoformat(forecast['quoteDate'])
@@ -30,7 +30,8 @@ def freight_error(p):
     if (fs,fe)!=(rs,re) or any(not forecast.get(k) or forecast.get(k)!=realized.get(k) for k in keys):return {'status':'blocked','reason':'航线/标准船/单位/指数/结算窗口/聚合方式不匹配'}
     if forecast['aggregation']!='settlement-period-mean':return {'status':'blocked','reason':'需匹配结算期均值，不能用单日价验证月合约'}
     actual=number(realized['value'],'realized',.000001);pred=number(forecast['value'],'forecast',0)
-    return {'status':'one-declared-observation','signedRelativeError':(pred-actual)/actual,'absoluteRelativeError':abs(pred-actual)/actual,'limits':'一个声明样本不证明稳定预测能力，不认证输入，不映射股价'}
+    error=number((pred-actual)/actual,'computed freight error')
+    return {'status':'one-declared-observation','signedRelativeError':error,'absoluteRelativeError':abs(error),'limits':'一个声明样本不证明稳定预测能力，不认证输入，不映射股价'}
 
 def source_roots(records):
     if not isinstance(records,list) or len(records)>10000:raise ValueError('sources必须为不超过10000项列表')
@@ -70,6 +71,7 @@ def valuation_series(p):
     for key in ('source','netAssetBasis','samplingBasis'):
         if not isinstance(p.get(key),str) or not p[key].strip():raise ValueError('估值序列缺少'+key)
     asof=date.fromisoformat(p['asOf']);retrieved=date.fromisoformat(p['retrievedAt']);start,end=period(p)
+    if retrieved<asof:raise ValueError('取数日早于当前PB观察日，不能当已知事实')
     if end>asof or start>asof:raise ValueError('估值窗口晚于研究时点')
     rows=p['observations']
     if not isinstance(rows,list) or not rows or len(rows)>100000:raise ValueError('估值观察值数量无效')

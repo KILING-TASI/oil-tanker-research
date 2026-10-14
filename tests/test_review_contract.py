@@ -4,6 +4,16 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'skill/scripts'))
 import evidence_checks as check
 class ReviewContract(unittest.TestCase):
+    def test_margin_derived_overflow(self):
+        p=dict(current=dict(start='2026-01-01',end='2026-06-30',scope='all',unit='CNY',revenue=.000001,cost=1e308),prior=dict(start='2025-01-01',end='2025-06-30',scope='all',unit='CNY',revenue=1,cost=0,restatementStatus='not-required'))
+        with self.assertRaises(ValueError):check.margin_compare(p)
+    def test_freight_derived_overflow(self):
+        b=dict(start='2026-09-01',end='2026-09-30',route='TD3C',vesselBasis='standard',unit='USD/day',aggregation='settlement-period-mean',benchmark='Baltic')
+        p=dict(asOf='2026-10-13',forecast=dict(**b,quoteDate='2026-08-01',value=1e308),realized=dict(**b,value=.000001))
+        with self.assertRaises(ValueError):check.freight_error(p)
+    def test_retrieved_before_observed(self):
+        p=self.valuation();p['retrievedAt']='2026-10-12'
+        with self.assertRaises(ValueError):check.valuation_series(p)
     def test_nonobject_root(self):
         with self.assertRaises(ValueError):check.review([])
     def test_empty_margin_basis(self):
