@@ -352,6 +352,17 @@
       "publisherRoot": "CMES-601872",
       "reviewedAt": "2026-10-14",
       "authentication": "公司活动记录；投资者提问不是公司承诺，答复中的展望不是已实现事实。"
+    },
+    {
+      "id": "frontline-q2-2026",
+      "url": "https://www.frontlineplc.cy/fro-second-quarter-and-six-months-2026-results/",
+      "publishedAt": "2026-08-28",
+      "sha256": "0c02e2a2bfa89e515b2f41df004197b373f9f751abd4c52c4e92648a5853b63b",
+      "tier": "primary",
+      "publisherRoot": "Frontline",
+      "status": "retrieved",
+      "reviewedAt": "2026-10-14",
+      "authentication": "公司季度新闻稿；已实现现货TCE、已锁定部分和未来现金保本指引分别使用，不替代中国船东口径。"
     }
   ],
   "rights": "Raw third-party PDFs/pages stay in local evidence storage; repository contains facts, source metadata and original analysis only."

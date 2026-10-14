@@ -2,19 +2,19 @@
   "reviewedAt": "2026-10-14",
   "scope": "791项可定位文本核对单元，另125项图表固定输入；含重复及复合论证，不等于独立事实个数。全部登记处理状态，但未取得原始记录的条目不能称取证完成。",
   "counts": {
-    "unverified": 729,
-    "scope-error": 19,
+    "unverified": 709,
+    "scope-error": 22,
     "secondary-only": 22,
     "withdrawn-inference": 22,
     "partial-benchmark": 4,
-    "supported-disclosure": 52,
-    "recomputed": 3,
+    "supported-disclosure": 58,
+    "recomputed": 6,
     "needs-definition": 15,
     "recomputed-vendor": 3,
-    "partial-disclosure": 8,
+    "partial-disclosure": 9,
     "supported-presentation": 16,
-    "contradicted": 5,
-    "period-conflict": 11,
+    "contradicted": 9,
+    "period-conflict": 14,
     "partial-vendor": 4,
     "arithmetic-error": 3
   },
@@ -4903,15 +4903,22 @@
       "tag": "td",
       "context": "招商轮船 | 2025 实际",
       "original": "60.12 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "招商轮船半年报第37页披露2025全年归母净利润6,012,096,267.97元，折合60.12亿元；仅认证历史实际值，不认证同行卖方预测。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "",
+      "auditMode": "manual primary-source identity and period review",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          37
+        ]
+      }
     },
     {
       "id": "d-0241",
@@ -5093,15 +5100,22 @@
       "tag": "td",
       "context": "招商南油 | 2025 实际",
       "original": "13.11 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "招商南油2025年报第7页归母净利润1,311,487,189.70元，折合13.11亿元；不能将相邻预测列视为公司指引。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "",
+      "auditMode": "manual primary-source identity and period review",
+      "sourcePages": {
+        "njtc-fy2025": [
+          7
+        ]
+      }
     },
     {
       "id": "d-0251",
@@ -6625,15 +6639,17 @@
       "tag": "td",
       "context": "现金保本（Frontline 指引，未来 12 个月） | 隐含 TCE（万美元/天）",
       "original": "2.38",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "Frontline于2026-08-28披露VLCC未来12个月估计日均现金保本23,800美元。属于前瞻现金指引，不是会计利润保本，也不适用于中国船东。",
+      "sources": [
+        "frontline-q2-2026"
+      ],
       "sourceClaimed": "来源：Clarksons Securities 客户报告转引自国际船舶网（2026-08）；Cal-27 TD3C 33.5 万美元/天转引自雪球引 Oman Nokta（2026-09）；美湾-中国 2027/2028 FFA 与 2–3 年期租 8 万美元/天、Frontline 卖船 1.35 亿美元/艘转引自 StocksRegister 的 Frontline 2026Q2 业绩纪要（2026-08）；美湾-中国 2027 年 17.6 万 / 2028 年 8.3 万转引自航运星球（2026-10）。 全部为转引，非一手交易所数据，须核原文。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "missingEvidence": "",
+      "auditMode": "manual primary-source identity and period review"
     },
     {
       "id": "d-0328",
@@ -17170,14 +17186,22 @@
       "tag": "script",
       "context": "chart_gm | 2026H1 毛利率 | 招商轮船 601872",
       "original": "44.98",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed",
+      "ruling": "2026H1合并营业收入与营业成本复算毛利率，保留两位小数为44.98%；这是本期水平，不能把与2025全年之差称同比。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "searchFamily": "chart-series",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-chart-0056",
@@ -17188,14 +17212,22 @@
       "tag": "script",
       "context": "chart_gm | 2026H1 毛利率 | 中远海能 600026",
       "original": "41.39",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed",
+      "ruling": "2026H1合并营业收入与营业成本复算毛利率，保留两位小数为41.39%；这是本期水平，不能把与2025全年之差称同比。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "searchFamily": "chart-series",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          14
+        ]
+      }
     },
     {
       "id": "d-chart-0057",
@@ -17206,14 +17238,22 @@
       "tag": "script",
       "context": "chart_gm | 2026H1 毛利率 | 招商南油 601975",
       "original": "29.85",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "recomputed",
+      "ruling": "2026H1合并营业收入与营业成本复算毛利率，保留两位小数为29.85%；这是本期水平，不能把与2025全年之差称同比。",
+      "sources": [
+        "nanjing-h1-2026-primary"
+      ],
       "searchFamily": "chart-series",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          15
+        ]
+      }
     },
     {
       "id": "d-chart-0058",
@@ -17224,9 +17264,13 @@
       "tag": "script",
       "context": "chart_gm | 毛利率变化 | 招商轮船 601872",
       "original": "18.51",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "scope-error",
+      "ruling": "这是2026H1毛利率与2025全年的差值，期间长度和季节性不同，不能称同比变化。当前同比应使用2025H1同范围收入成本。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-primary"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
@@ -17242,9 +17286,13 @@
       "tag": "script",
       "context": "chart_gm | 毛利率变化 | 中远海能 600026",
       "original": "15.26",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "scope-error",
+      "ruling": "这是2026H1毛利率与2025全年的差值，期间长度和季节性不同，不能称同比变化。当前同比应使用2025H1同范围收入成本。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-primary"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
@@ -17260,9 +17308,13 @@
       "tag": "script",
       "context": "chart_gm | 毛利率变化 | 招商南油 601975",
       "original": "0.98",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "scope-error",
+      "ruling": "这是2026H1毛利率与2025全年的差值，期间长度和季节性不同，不能称同比变化。当前同比应使用2025H1同范围收入成本。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-primary"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
@@ -17514,14 +17566,17 @@
       "tag": "script",
       "context": "chart_ladder | TCE | 现金保本 (Frontline)",
       "original": "2.38",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "Frontline于2026-08-28披露VLCC未来12个月估计日均现金保本23,800美元。属于前瞻现金指引，不是会计利润保本，也不适用于中国船东。",
+      "sources": [
+        "frontline-q2-2026"
+      ],
       "searchFamily": "chart-series",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "d-chart-0075",
@@ -17568,14 +17623,17 @@
       "tag": "script",
       "context": "chart_ladder | TCE | Frontline Q2 实现",
       "original": "15.27",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "公司披露2026Q2 VLCC已实现日均现货TCE152,700美元，非全船型平均，也不是中国船东实现收益。",
+      "sources": [
+        "frontline-q2-2026"
+      ],
       "searchFamily": "chart-series",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "d-chart-0078",
@@ -17586,14 +17644,17 @@
       "tag": "script",
       "context": "chart_ladder | TCE | Frontline Q3 已锁定",
       "original": "15.69",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "partial-disclosure",
+      "ruling": "156,900美元是截至披露时2026Q3已锁定VLCC现货TCE，覆盖86%。公司明确预期完整季度因压载天数而低于已锁定值，不能写成完整Q3已实现收益。",
+      "sources": [
+        "frontline-q2-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "d-chart-0079",
@@ -17622,14 +17683,17 @@
       "tag": "script",
       "context": "chart_ffa |  | 现金保本\n(Frontline)",
       "original": "2.38",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "Frontline于2026-08-28披露VLCC未来12个月估计日均现金保本23,800美元。属于前瞻现金指引，不是会计利润保本，也不适用于中国船东。",
+      "sources": [
+        "frontline-q2-2026"
+      ],
       "searchFamily": "chart-series",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": ""
     },
     {
       "id": "d-chart-0081",
@@ -17874,14 +17938,22 @@
       "tag": "script",
       "context": "chart_seg |  | 招商轮船\n油轮",
       "original": "122.95",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "公司2026H1分部表第16页收入同比为115.66%，与旧图固定输入不符；以披露同比为准，不从两位小数亿元倒算精确增速。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-chart-0095",
@@ -17892,14 +17964,22 @@
       "tag": "script",
       "context": "chart_seg |  | 招商轮船\n干散货",
       "original": "42.81",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "公司2026H1分部表第16页收入同比为38.34%，与旧图固定输入不符；以披露同比为准，不从两位小数亿元倒算精确增速。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-chart-0096",
@@ -17910,14 +17990,22 @@
       "tag": "script",
       "context": "chart_seg |  | 招商轮船\n集装箱",
       "original": "-1.99",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "公司2026H1分部表第16页收入同比为-1.47%，与旧图固定输入不符；以披露同比为准，不从两位小数亿元倒算精确增速。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-chart-0097",
@@ -17928,14 +18016,22 @@
       "tag": "script",
       "context": "chart_seg |  | 招商轮船\n滚装",
       "original": "23.71",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "公司2026H1分部表第16页收入同比为20.34%，与旧图固定输入不符；以披露同比为准，不从两位小数亿元倒算精确增速。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-chart-0098",
@@ -17946,14 +18042,22 @@
       "tag": "script",
       "context": "chart_seg |  | 招商南油\n外贸*",
       "original": "-17.93",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到-17.93%原数，但属于2025全年而非2026H1。不能与其他公司2026H1分部同比并列判断当期强弱。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "njtc-fy2025": [
+          18
+        ]
+      }
     },
     {
       "id": "d-chart-0099",
@@ -17964,14 +18068,22 @@
       "tag": "script",
       "context": "chart_seg |  | 招商南油\n内贸*",
       "original": "5.52",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到5.52%原数，但属于2025全年而非2026H1。不能与其他公司2026H1分部同比并列判断当期强弱。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "njtc-fy2025": [
+          18
+        ]
+      }
     },
     {
       "id": "d-chart-0100",
@@ -17982,14 +18094,22 @@
       "tag": "script",
       "context": "chart_seg |  | 招商南油\n成品油*",
       "original": "-18.69",
-      "status": "unverified",
-      "ruling": "图表固定数组已提取；原始序列、口径及准确性未重新认证，不作为新投资结论输入。",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到-18.69%原数，但属于2025全年而非2026H1。不能与其他公司2026H1分部同比并列判断当期强弱。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "searchFamily": "chart-series",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
-      "auditMode": "script options extracted in isolated Node context, not benchmark verification",
-      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
+      "auditMode": "manual primary-source identity and period review",
+      "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。",
+      "missingEvidence": "",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17
+        ]
+      }
     },
     {
       "id": "s-chart-0101",
