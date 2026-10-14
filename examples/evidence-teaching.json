@@ -9,7 +9,47 @@
     "end": "2026-10-13",
     "currentDate": "2026-10-13",
     "current": 2,
-    "observations": [{"date":"2026-10-11","value":1},{"date":"2026-10-13","value":2}]
+    "observations": [
+      {
+        "date": "2026-10-11",
+        "value": 1
+      },
+      {
+        "date": "2026-10-13",
+        "value": 2
+      }
+    ]
   },
-  "sources": [{"id":"a","originalPublisher":"示例发布者"},{"id":"b","parent":"a"}]
+  "sources": [
+    {
+      "id": "a",
+      "originalPublisher": "示例发布者"
+    },
+    {
+      "id": "b",
+      "parent": "a"
+    }
+  ],
+  "identity": {
+    "asOf": "2026-10-14",
+    "claim": {
+      "symbol": "SYNTHETIC",
+      "start": "2026-01-01",
+      "end": "2026-06-30",
+      "metric": "synthetic-revenue",
+      "unit": "CNY",
+      "definition": "原创合成教学值",
+      "value": 100
+    },
+    "evidence": {
+      "symbol": "SYNTHETIC",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "metric": "synthetic-revenue",
+      "unit": "CNY",
+      "definition": "原创合成教学值",
+      "value": 100,
+      "publishedAt": "2026-03-31"
+    }
+  }
 }

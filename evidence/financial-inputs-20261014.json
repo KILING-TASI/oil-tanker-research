@@ -51,9 +51,9 @@
     {
       "entity": "招商南油",
       "symbol": "601975",
-      "source": "nanjing-h1-2026-mirror",
+      "source": "nanjing-h1-2026-primary",
       "period": "2026H1 vs 2025H1",
-      "statementScope": "consolidated revenue/cost, before additional revenue taxes; mirrored filing",
+      "statementScope": "consolidated revenue/cost, before additional revenue taxes; primary filing",
       "pages": [
         6,
         15
@@ -72,5 +72,5 @@
       "capexToCfo": 0.458664310699825
     }
   ],
-  "scope": "披露数字与声明复算，三个半年报均未经审计；不推断VLCC独立分部利润或买卖结论"
+  "scope": "披露数字与声明复算，三个半年报均未经审计；第二轮南油取得巨潮原版；不推断VLCC独立分部利润或买卖结论"
 }

@@ -276,6 +276,82 @@
       "status": "retrieved",
       "reviewedAt": "2026-10-14",
       "authentication": "vendor retrieval, not independent accounting or point-in-time certification"
+    },
+    {
+      "id": "nanjing-h1-2026-primary",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520294.PDF",
+      "status": "retrieved",
+      "sha256": "04b60ecf9bbd8beb57a2b658ba08318ecbab3780e2dcc3598b879f34f5ffd715",
+      "pages": 176,
+      "publisherRoot": "NJTC-601975",
+      "tier": "primary",
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "njtc-fy2025",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225059757.PDF",
+      "sha256": "55ff673ed90df57edcfa17f1893ce68f1f4d27e024c3b34d3da75a9758cd749e",
+      "pages": 233,
+      "status": "retrieved",
+      "tier": "primary",
+      "publisherRoot": "NJTC-601975",
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "cmes-dividend-2025",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-07-03/1225406665.PDF",
+      "sha256": "2158dbe6724cf04106f3f9b701b433a340a11ece5dc43c0ba6e29faa8dd329ad",
+      "pages": 4,
+      "status": "retrieved",
+      "tier": "primary",
+      "publisherRoot": "CMES-601872",
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "cosco-dividend-2025",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-07-10/1225417123.PDF",
+      "sha256": "d6a87c4b939746a014d3f3ad78b707e75b6096d663740464205f870b49c1307c",
+      "pages": 4,
+      "status": "retrieved",
+      "tier": "primary",
+      "publisherRoot": "COSCO-Energy-600026",
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "njtc-dividend-2025",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-05-19/1225314392.PDF",
+      "sha256": "d477376a416499033222ad68c08c931b21aad9120fbc5d920a4ead9439ac506e",
+      "pages": 3,
+      "status": "retrieved",
+      "tier": "primary",
+      "publisherRoot": "NJTC-601975",
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "cosco-presentation-h1-2026",
+      "url": "https://energy.coscoshipping.com/col/col19517/index.html",
+      "documentTitle": "2026年半年度业绩推介PPT",
+      "publishedAt": "2026-08-28",
+      "dataAsOf": "2026-06-30",
+      "sha256": "9c904e5bfbae3d2ed4efbd01cda8ee6253df26a7483de06fa7b9778c205a317f",
+      "pages": 25,
+      "status": "retrieved-via-public-download",
+      "tier": "primary",
+      "publisherRoot": "COSCO-Energy-600026",
+      "reviewedAt": "2026-10-14",
+      "authentication": "公司官网公开下载；本公司船队和经营表为公司披露，转引Clarksons/Kpler图表并未独立取得上游底稿，不能统称独立一手市场数据。"
+    },
+    {
+      "id": "cmes-ir-may2026",
+      "url": "https://sns.sseinfo.com/resources/images/upload/202605/2026052916240321809690001.pdf",
+      "publishedAt": "2026-05-29",
+      "sha256": "142cd34c717de01250331983e33f933d0e0cc107585c3d4e1e30595996d36b33",
+      "pages": 7,
+      "status": "retrieved",
+      "tier": "primary",
+      "publisherRoot": "CMES-601872",
+      "reviewedAt": "2026-10-14",
+      "authentication": "公司活动记录；投资者提问不是公司承诺，答复中的展望不是已实现事实。"
     }
   ],
   "rights": "Raw third-party PDFs/pages stay in local evidence storage; repository contains facts, source metadata and original analysis only."

@@ -2,20 +2,34 @@
   "reviewedAt": "2026-10-14",
   "scope": "791项可定位文本核对单元，另125项图表固定输入；含重复及复合论证，不等于独立事实个数。全部登记处理状态，但未取得原始记录的条目不能称取证完成。",
   "counts": {
-    "unverified": 807,
-    "scope-error": 20,
-    "secondary-only": 23,
-    "withdrawn-inference": 19,
+    "unverified": 729,
+    "scope-error": 19,
+    "secondary-only": 22,
+    "withdrawn-inference": 22,
     "partial-benchmark": 4,
-    "supported-disclosure": 18,
-    "supported-mirror": 5,
+    "supported-disclosure": 48,
     "recomputed": 3,
-    "needs-definition": 6,
+    "needs-definition": 15,
     "recomputed-vendor": 3,
-    "contradicted": 1,
+    "partial-disclosure": 8,
+    "contradicted": 9,
+    "supported-presentation": 16,
+    "period-conflict": 11,
     "partial-vendor": 4,
     "arithmetic-error": 3
   },
+  "frozenReports": [
+    {
+      "file": "油运行业数据拆解-20261014.html",
+      "sha256": "a45f6b4346a805146904050e966d95d32bedd33c586a3b88051f9957d7311d97"
+    },
+    {
+      "file": "油运行业状态仪表盘-20261014.html",
+      "sha256": "3584e3f61c663b88b36e67bcc0dd137bde26294ea92db707d0453fe09ba99e25"
+    }
+  ],
+  "textUnits": 791,
+  "chartInputs": 125,
   "claims": [
     {
       "id": "d-0001",
@@ -46,11 +60,12 @@
       "context": "",
       "original": "景气是真的，但不是\"全行业\"的。 硬证据在毛利率：招商轮船 2026H1 毛利率 44.98%，比 2025 全年 26.47% 抬升 18.51 个百分点 ；中远海能抬升 15.26 个百分点；而 招商南油只抬升 0.98 个百分点 。VLCC（原油）与 MR（成品油）根本不在同一个周期里。",
       "status": "scope-error",
-      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
@@ -58,7 +73,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": "PDF p24/p14/p15",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0003",
@@ -205,18 +227,26 @@
       "context": "",
       "original": "【第三轮新增】增长的 100% 来自外贸原油这一个分部。 中远海能 2026H1 外贸原油收入 +58.36% ，而国内运输整体 -1.03% 、外贸成品油 +0.13%、内贸成品油 -12.59%。招商轮船更极端： VLCC 运量同比 -8.9% ，营业成本只增 12.38% 而营收增 56.15%—— 量在跌，全靠价。 招商南油则是外贸 -17.93%，是三家里唯一主业在萎缩的。",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0011",
@@ -342,18 +372,26 @@
       "context": "",
       "original": "【第二轮新增】这轮利润 100% 来自价格，零来自量。 招商轮船油轮船队 2026H1 周转量同比 -2.22% ，油轮板块净利却 +378.62% 。配合中国原油进口 -14.6%，两条独立数据指向同一结论。",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0018",
@@ -911,9 +949,10 @@
       "context": "",
       "original": "怎么读这张图： TD3C 与 MR 之间差了 19 倍 。招商南油是 A 股唯一的成品油（MR/LR）纯标的、无 VLCC，它既享受不到 141 万美元的运价，也没有 VLCC 船队去承接战争溢价——这就是它毛利率几乎没动的原因。",
       "status": "scope-error",
-      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。",
+      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：国金证券《交通运输产业行业周报》2026-10-11（经慧博投研转载）、界面新闻 2026-10-09、同花顺 2026-10-09 —— 均为非一手来源，需核实原文 。TCE 为等价期租租金。",
       "searchFamily": "company",
@@ -921,7 +960,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": "PDF p8-9, p21-22",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0047",
@@ -1622,10 +1668,11 @@
       "tag": "td",
       "context": "2026H1 营业收入 | 招商南油 601975.SH",
       "original": "33.09 亿（+19.37%） 媒体口径",
-      "status": "supported-mirror",
-      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。",
+      "status": "supported-disclosure",
+      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1633,7 +1680,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": null,
       "locator": "PDF p6",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0084",
@@ -1688,10 +1742,11 @@
       "tag": "td",
       "context": "2026H1 归母净利 | 招商南油 601975.SH",
       "original": "8.12 亿（+42.41%） 媒体口径",
-      "status": "supported-mirror",
-      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。",
+      "status": "supported-disclosure",
+      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1699,7 +1754,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": null,
       "locator": "PDF p6",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0087",
@@ -1755,9 +1817,10 @@
       "context": "2026H1 毛利率 | 招商南油 601975.SH",
       "original": "29.85%",
       "status": "recomputed",
-      "ruling": "同一半年合并营业收入和营业成本复算相符；简单毛利率未额外扣营业税金，不与报告分部含税口径混用。",
+      "ruling": "同一半年合并营业收入和营业成本复算相符；简单毛利率未额外扣营业税金，不与报告分部含税口径混用。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1765,7 +1828,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": null,
       "locator": "PDF p15; financial-inputs-20261014.json",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0090",
@@ -1777,11 +1847,12 @@
       "context": "毛利率较 2025 年变化 | 招商轮船 601872.SH",
       "original": "+18.51 pct",
       "status": "scope-error",
-      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1789,7 +1860,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": "PDF p24/p14/p15",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0091",
@@ -1801,11 +1879,12 @@
       "context": "毛利率较 2025 年变化 | 中远海能 600026.SH",
       "original": "+15.26 pct",
       "status": "scope-error",
-      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1813,7 +1892,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": "PDF p24/p14/p15",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0092",
@@ -1825,11 +1911,12 @@
       "context": "毛利率较 2025 年变化 | 招商南油 601975.SH",
       "original": "+0.98 pct",
       "status": "scope-error",
-      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1837,7 +1924,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": "PDF p24/p14/p15",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0093",
@@ -1849,11 +1943,12 @@
       "context": "2026H1 净利率 | 招商轮船 601872.SH",
       "original": "35.71%",
       "status": "needs-definition",
-      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。",
+      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1861,7 +1956,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": null,
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0094",
@@ -1873,11 +1975,12 @@
       "context": "2026H1 净利率 | 中远海能 600026.SH",
       "original": "31.57%",
       "status": "needs-definition",
-      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。",
+      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1885,7 +1988,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": null,
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0095",
@@ -1897,11 +2007,12 @@
       "context": "2026H1 净利率 | 招商南油 601975.SH",
       "original": "24.55%",
       "status": "needs-definition",
-      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。",
+      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -1909,7 +2020,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": null,
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0096",
@@ -2067,10 +2185,11 @@
       "tag": "td",
       "context": "经营现金流（H1） | 招商南油 601975.SH",
       "original": "9.42 亿 媒体口径",
-      "status": "supported-mirror",
-      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。",
+      "status": "supported-disclosure",
+      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "company",
@@ -2078,7 +2197,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": null,
       "locator": "PDF p6",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0104",
@@ -2205,15 +2331,23 @@
       "tag": "td",
       "context": "船型定位 | 招商轮船 601872.SH",
       "original": "VLCC + 干散（VLOC 37 艘，世界第一）",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "partial-disclosure",
+      "ruling": "半年报p14正文经营、管理VLOC37艘；p17自有分类34艘，范围不同。VLCC与干散等布局支持；“世界第一”是公司披露自述，未独立取得全球船队排名底稿。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库（行情/市值/财务/估值，2026-10-14 10:26 与 2026H1 报告期）；租船敞口与船队定位来自界面新闻 2026-10-09（引中期业绩会与投资者关系记录）、每日经济新闻 2026-09-30（引公司公告）—— 非一手来源，需核实原文 。估值分位为 2026-10-13 快照。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          14,
+          17
+        ]
+      }
     },
     {
       "id": "d-0111",
@@ -4375,10 +4509,11 @@
       "tag": "td",
       "context": "招商南油 601975 | 经营活动净现金流",
       "original": "9.42 亿元",
-      "status": "supported-mirror",
-      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。",
+      "status": "supported-disclosure",
+      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "company",
@@ -4386,7 +4521,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": null,
       "locator": "PDF p6",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0224",
@@ -4397,10 +4539,11 @@
       "tag": "td",
       "context": "招商南油 601975 | 购建固定资产支出",
       "original": "4.32 亿元",
-      "status": "supported-mirror",
-      "ruling": "购建固定资产、无形资产及其他长期资产支付现金支持该数值，不等于本期新增造船订单或全投资支出。",
+      "status": "supported-disclosure",
+      "ruling": "购建固定资产、无形资产及其他长期资产支付现金支持该数值，不等于本期新增造船订单或全投资支出。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
@@ -4408,7 +4551,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": null,
       "locator": "PDF p52",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0225",
@@ -4476,15 +4626,22 @@
       "tag": "td",
       "context": "中远海能 600026 | 2026 中期预案",
       "original": "10 派 2.8 元",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "旧列在招商轮船名下10派2.8错位。招商轮船2026H1方案每10股1.30元。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          36
+        ]
+      }
     },
     {
       "id": "d-0229",
@@ -4495,15 +4652,23 @@
       "tag": "td",
       "context": "中远海能 600026 | 2026 年内已实施",
       "original": "10 派 3.8 元（7-17 除权）",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "旧列在招商轮船名下10派3.8/7-17错位；招商轮船2025末期每股0.25元，登记7-9、除息及发放7-10。",
+      "sources": [
+        "cmes-dividend-2025"
+      ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-dividend-2025": [
+          1,
+          2
+        ]
+      }
     },
     {
       "id": "d-0230",
@@ -4552,15 +4717,22 @@
       "tag": "td",
       "context": "招商轮船 601872 | 2026 中期预案",
       "original": "10 派 1.3 元",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "旧列在中远海能名下10派1.3错位；中远海能2026H1方案每股0.28元，即10派2.8。方案不等于已到账。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          2
+        ]
+      }
     },
     {
       "id": "d-0233",
@@ -4571,15 +4743,23 @@
       "tag": "td",
       "context": "招商轮船 601872 | 2026 年内已实施",
       "original": "10 派 2.5 元（7-10 除权）",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "旧列在中远海能名下10派2.5/7-10错位；中远海能2025年度每股0.38元，登记7-16、除息及发放7-17。此处为A股实施公告。",
+      "sources": [
+        "cosco-dividend-2025"
+      ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-dividend-2025": [
+          1,
+          2
+        ]
+      }
     },
     {
       "id": "d-0234",
@@ -4628,15 +4808,23 @@
       "tag": "td",
       "context": "招商南油 601975 | 2026 年内已实施",
       "original": "10 派 0.27 元（5-27 除权）",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "南油2025年度A股每股0.027元=10派0.27，登记5-26、除息及发放5-27。与未新增2026中期方案不冲突。",
+      "sources": [
+        "njtc-dividend-2025"
+      ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-dividend-2025": [
+          1,
+          2
+        ]
+      }
     },
     {
       "id": "d-0237",
@@ -4686,9 +4874,10 @@
       "context": "",
       "original": "南油累计派现 1.26 亿元 vs 累计募资 55.30 亿元， 派现募资比仅 2.29，行业第 34 名 。它是 A 股唯一的成品油纯标的，但既没吃到这轮行情（毛利率仅 +0.98pct），也不分红。它目前唯一的支持逻辑是\"补涨\"和\"目标价空间最大（+30.68%）\"——这两条都是交易性而非基本面的。",
       "status": "scope-error",
-      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。",
+      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "valuation",
@@ -4696,7 +4885,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "原行情/净资产版本、PB序列、机构或南向持仓明细、精确起止/复权和窗口未取得；当前第三方页面不能重现旧盘中快照。",
       "locator": "PDF p8-9, p21-22",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0240",
@@ -5012,18 +5208,26 @@
       "context": "",
       "original": "一个必须打折的口径：卖方系统性高估。 历史预测偏差（预测值 vs 实际值）： · 招商轮船：2022 -2.92% 、2023 -6.89% 、2024 +4.54%、2025 -5.50% · 中远海能：2022 -5.23% 、2023 -6.39% 、2024 -0.61% 、2025 -10.27% · 招商南油：2022 -2.15% 、2023 -3.92% 、2024 -3.74% 、2025 -18.16% 12 次预测里 11 次是高估的 ，且在周期下行年份误差最大（南油 2025 年 -18.16%、中远海能 2025 年 -10.27%）。因此 2026E 的 166 亿 / 123.9 亿应当按历史偏差打折看待，尤其是 2027–2028 年的预测在拐点附近可信度更低。",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0257",
@@ -5496,15 +5700,23 @@
       "tag": "td",
       "context": "招商轮船 601872 | 在手订单",
       "original": "15 条（期内新签 10 艘 VLCC）",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "partial-disclosure",
+      "ruling": "p17运力表VLCC在建15艘、p16本期新签VLCC10艘均有披露；截至2026H1，不认证随后订单增减或全行业供给墙。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：摩根大通研报（2026-10-09）转引 investingLive；Vortexa / Bloomberg / 路透（2026-09-30 ~ 10-01）；东方财富交运周报（2026-10-13）。 均为转引，非一手。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16,
+          17
+        ]
+      }
     },
     {
       "id": "d-0282",
@@ -5537,15 +5749,23 @@
       "tag": "td",
       "context": "中远海能 600026 | VLCC 运营",
       "original": "48 条 （另有口径称 53 艘）",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "partial-disclosure",
+      "ruling": "官网2026H1推介p3/p17：VLCC在营48艘=自有41+租入7，另在建6。旧53艘其他日期/范围未取得，不能因48+6就认证53或其成因。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：摩根大通研报（2026-10-09）转引 investingLive；Vortexa / Bloomberg / 路透（2026-09-30 ~ 10-01）；东方财富交运周报（2026-10-13）。 均为转引，非一手。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          3,
+          17
+        ]
+      }
     },
     {
       "id": "d-0284",
@@ -5556,15 +5776,22 @@
       "tag": "td",
       "context": "中远海能 600026 | 在手订单",
       "original": "6 条",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p17：VLCC在建6艘，预计2027—2028交付。是截至2026-06-30订单情况，非已交付或确定未来运力。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：摩根大通研报（2026-10-09）转引 investingLive；Vortexa / Bloomberg / 路透（2026-09-30 ~ 10-01）；东方财富交运周报（2026-10-13）。 均为转引，非一手。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          17
+        ]
+      }
     },
     {
       "id": "d-0285",
@@ -5597,15 +5824,22 @@
       "tag": "td",
       "context": "招商南油 601975 | 2026H1 板块表现",
       "original": "MR 大西洋航线日收益 5.03 万美元（同比翻倍），亚太 3.26 万美元（+52.74%）",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "partial-disclosure",
+      "ruling": "南油H1 p10披露市场大西洋一揽子50,289美元/日，同比118.77%；亚太32,606，同比增长52.74%。这是市场平均，非该公司实现价；旧同比“翻倍”丢失精度。",
+      "sources": [
+        "nanjing-h1-2026-primary"
+      ],
       "sourceClaimed": "来源：摩根大通研报（2026-10-09）转引 investingLive；Vortexa / Bloomberg / 路透（2026-09-30 ~ 10-01）；东方财富交运周报（2026-10-13）。 均为转引，非一手。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          10
+        ]
+      }
     },
     {
       "id": "d-0287",
@@ -5639,18 +5873,26 @@
       "context": "",
       "original": "弹性差异的根源终于落到了实处。 招商轮船 VLCC 51 艘且 绝大部分投现货 ——运价涨多少它立刻赚多少；中远海能 48 艘但 长协占比高 ——抗跌但上行慢。这解释了前文毛利率改善幅度的差距（+18.51pct vs +15.26pct）。 一个必须点出的反直觉事实：招商轮船油轮船队 2026H1 运输量 3912 万吨、周转量 2996.96 亿吨海里，同比分别 -8.9% 和 -2.22%。 量在下降，油轮板块净利却 +378.62%。 这轮利润 100% 来自价格，零来自量。 配合第六节\"中国原油进口 -14.6%\"，两条独立数据指向同一结论：这是纯粹的价格/效率行情，需求端不仅没帮忙，还在拖后腿。",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：摩根大通研报（2026-10-09）转引 investingLive；Vortexa / Bloomberg / 路透（2026-09-30 ~ 10-01）；东方财富交运周报（2026-10-13）。 均为转引，非一手。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0289",
@@ -6744,15 +6986,22 @@
       "tag": "td",
       "context": "外贸原油 | 营业收入",
       "original": "82.73 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。外贸原油收入8,273,217千元，折82.73217亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0347",
@@ -6763,15 +7012,22 @@
       "tag": "td",
       "context": "外贸原油 | 同比",
       "original": "+58.36%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为58.4%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0348",
@@ -6782,15 +7038,22 @@
       "tag": "td",
       "context": "外贸成品油 | 营业收入",
       "original": "11.52 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。外贸成品油收入1,152,158千元，折11.52158亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0349",
@@ -6801,15 +7064,22 @@
       "tag": "td",
       "context": "外贸成品油 | 同比",
       "original": "+0.13%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为0.1%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0350",
@@ -6820,15 +7090,22 @@
       "tag": "td",
       "context": "外贸油轮出租 | 营业收入",
       "original": "10.98 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。外贸油轮出租收入1,097,894千元，折10.97894亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0351",
@@ -6839,15 +7116,22 @@
       "tag": "td",
       "context": "内贸原油 | 营业收入",
       "original": "16.59 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。内贸原油收入1,658,936千元，折16.58936亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0352",
@@ -6858,15 +7142,22 @@
       "tag": "td",
       "context": "内贸原油 | 同比",
       "original": "+4.45%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为4.5%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0353",
@@ -6877,15 +7168,22 @@
       "tag": "td",
       "context": "内贸成品油 | 营业收入",
       "original": "9.66 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。内贸成品油收入965,973千元，折9.65973亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0354",
@@ -6896,15 +7194,22 @@
       "tag": "td",
       "context": "内贸成品油 | 同比",
       "original": "-12.59%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为−12.6%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0355",
@@ -6934,15 +7239,22 @@
       "tag": "td",
       "context": "LNG 运输 | 营业收入",
       "original": "15.20 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第17页支持该限定数值。LNG运输收入15.20亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          17
+        ]
+      }
     },
     {
       "id": "d-0357",
@@ -6953,15 +7265,22 @@
       "tag": "td",
       "context": "LNG 运输 | 同比",
       "original": "+22.20%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第17页支持该限定数值。LNG运输收入同比22.20%。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          17
+        ]
+      }
     },
     {
       "id": "d-0358",
@@ -6972,15 +7291,22 @@
       "tag": "td",
       "context": "LNG 运输 | 解读",
       "original": "归母净利 5.12 亿，+20.75%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第17页支持该限定数值。LNG板块归母净利润5.12亿元，同比增长20.75%；不能与内贸毛利直接相加成归母底座。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          17
+        ]
+      }
     },
     {
       "id": "d-0359",
@@ -6991,15 +7317,22 @@
       "tag": "td",
       "context": "化学品运输 | 营业收入",
       "original": "1.99 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。化学品运输收入198,755千元，折1.98755亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0360",
@@ -7010,15 +7343,22 @@
       "tag": "td",
       "context": "化学品运输 | 同比",
       "original": "+24.28%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为24.3%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0361",
@@ -7029,15 +7369,22 @@
       "tag": "td",
       "context": "LPG 运输 | 营业收入",
       "original": "1.79 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。LPG运输收入178,728千元，折1.78728亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
     },
     {
       "id": "d-0362",
@@ -7048,15 +7395,23 @@
       "tag": "td",
       "context": "LPG 运输 | 同比",
       "original": "+27.22%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "2026H1 LPG运输收入同比24.9%（半年报p15、p17），不是旧表27.22%。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15,
+          17
+        ]
+      }
     },
     {
       "id": "d-0363",
@@ -7067,15 +7422,22 @@
       "tag": "td",
       "context": "国际 / 国内 | 营业收入",
       "original": "122.52 亿 / 28.73 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第16页支持该限定数值。国际运输收入12,252,377千元、国内运输2,872,982千元，分别122.52377和28.72982亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0364",
@@ -7086,15 +7448,22 @@
       "tag": "td",
       "context": "国际 / 国内 | 同比",
       "original": "+40.65% / -1.03%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为国际40.6%、国内−1.1%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0365",
@@ -7105,15 +7474,24 @@
       "tag": "div",
       "context": "",
       "original": "这张表最硬的一句话：国际运输 +40.65%，国内运输 -1.03%。 公司自己定位的\"内贸 + LNG 安全垫\"确实存在，但它是 不增长 的垫子，不是增长引擎。 安全垫的量化规模： LNG 2026H1 归母净利 5.12 亿（+20.75%），全年化约 10 亿；内贸油运毛利率提升 4.1pct 至 28.1% ，H1 内贸油品收入 27.04 亿 → 毛利约 7.6 亿/半年。两者合计对 2026E 归母净利 123.87 亿的覆盖约 15%–20% 。 也就是说，运价若归零，公司仍剩下约 20 亿级别的盈利底座，但 80% 以上的利润暴露在周期上。",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "LNG归母增长20.75%、内贸毛利增长14.7%，不能统称不增长。毛利加归母再年化并除以2026E预测，期间和利润层次不一致；“运价归零仍有20亿盈利底座”“80%暴露”撤回。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-h1-2026": [
+          14,
+          16,
+          17
+        ]
+      }
     },
     {
       "id": "d-0366",
@@ -7124,15 +7502,22 @@
       "tag": "td",
       "context": "油轮 | 营业收入",
       "original": "95.83 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：油轮收入95.83亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0367",
@@ -7143,15 +7528,22 @@
       "tag": "td",
       "context": "油轮 | 收入同比",
       "original": "+115.70%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "原表将低精度结果扩成两位小数；公司精确披露同比为115.66%（保留一位可写115.7%）。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0368",
@@ -7162,15 +7554,22 @@
       "tag": "td",
       "context": "油轮 | 分部净利",
       "original": "61.89 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：油轮分部净利润61.89亿元，非独立VLCC归母。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0369",
@@ -7181,15 +7580,22 @@
       "tag": "td",
       "context": "油轮 | 净利同比",
       "original": "+378.62%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：油轮分部净利润同比378.62%。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0370",
@@ -7200,15 +7606,22 @@
       "tag": "td",
       "context": "干散货 | 营业收入",
       "original": "51.20 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：干散货收入51.20亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0371",
@@ -7219,15 +7632,22 @@
       "tag": "td",
       "context": "干散货 | 收入同比",
       "original": "+38.30%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "原表将低精度结果扩成两位小数；公司精确披露同比为38.34%。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0372",
@@ -7238,15 +7658,22 @@
       "tag": "td",
       "context": "干散货 | 分部净利",
       "original": "11.79 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：干散货分部净利润11.79亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0373",
@@ -7257,15 +7684,22 @@
       "tag": "td",
       "context": "干散货 | 净利同比",
       "original": "+179.37%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：干散货分部净利润同比179.37%。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0374",
@@ -7276,15 +7710,22 @@
       "tag": "td",
       "context": "集装箱 | 营业收入",
       "original": "29.75 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：集装箱收入29.75亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0375",
@@ -7295,15 +7736,22 @@
       "tag": "td",
       "context": "集装箱 | 收入同比",
       "original": "-1.99%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "原表同比与2026H1公司p16分部表不符，正确披露为−1.47%。禁止凭标签猜测适用列。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0376",
@@ -7314,15 +7762,22 @@
       "tag": "td",
       "context": "集装箱 | 分部净利",
       "original": "5.80 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：集装箱分部净利润5.80亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0377",
@@ -7333,15 +7788,22 @@
       "tag": "td",
       "context": "滚装 | 营业收入",
       "original": "9.82 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：滚装收入9.82亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0378",
@@ -7352,15 +7814,22 @@
       "tag": "td",
       "context": "滚装 | 收入同比",
       "original": "+23.71%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "原表同比与2026H1公司p16分部表不符，正确披露为20.34%。禁止凭标签猜测适用列。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0379",
@@ -7371,15 +7840,22 @@
       "tag": "td",
       "context": "滚装 | 分部净利",
       "original": "2.04 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：滚装分部净利润2.04亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0380",
@@ -7390,15 +7866,22 @@
       "tag": "td",
       "context": "滚装 | 净利同比",
       "original": "+92.00%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：滚装分部净利润同比92.00%。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0381",
@@ -7409,15 +7892,22 @@
       "tag": "td",
       "context": "LNG | 营业收入",
       "original": "1.39 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：LNG收入1.39亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0382",
@@ -7428,15 +7918,22 @@
       "tag": "td",
       "context": "LNG | 收入同比",
       "original": "+135.55%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "contradicted",
+      "ruling": "原表同比与2026H1公司p16分部表不符，正确披露为4,600.05%（收入）；10.56%（分部净利润）。禁止凭标签猜测适用列。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0383",
@@ -7447,15 +7944,22 @@
       "tag": "td",
       "context": "LNG | 分部净利",
       "original": "3.57 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：LNG分部净利润3.57亿元，受合联营投资等影响；不能把收入减成本当全部利润。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
     },
     {
       "id": "d-0384",
@@ -7485,15 +7989,23 @@
       "tag": "td",
       "context": "成品油运输 | 营业收入",
       "original": "30.50 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0386",
@@ -7504,15 +8016,23 @@
       "tag": "td",
       "context": "成品油运输 | 同比",
       "original": "-18.69%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0387",
@@ -7523,15 +8043,23 @@
       "tag": "td",
       "context": "原油运输 | 营业收入",
       "original": "20.15 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0388",
@@ -7542,15 +8070,23 @@
       "tag": "td",
       "context": "化学品运输 | 营业收入",
       "original": "3.93 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0389",
@@ -7561,15 +8097,23 @@
       "tag": "td",
       "context": "化学品运输 | 同比",
       "original": "-15.72%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0390",
@@ -7580,15 +8124,23 @@
       "tag": "td",
       "context": "乙烯运输 | 营业收入",
       "original": "1.86 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0391",
@@ -7599,15 +8151,23 @@
       "tag": "td",
       "context": "乙烯运输 | 同比",
       "original": "-6.39%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0392",
@@ -7618,15 +8178,23 @@
       "tag": "td",
       "context": "外贸 | 营业收入",
       "original": "34.08 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0393",
@@ -7637,15 +8205,23 @@
       "tag": "td",
       "context": "外贸 | 同比",
       "original": "-17.93%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0394",
@@ -7656,15 +8232,23 @@
       "tag": "td",
       "context": "内贸 | 营业收入",
       "original": "24.06 亿",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "company",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0395",
@@ -7675,15 +8259,23 @@
       "tag": "td",
       "context": "内贸 | 同比",
       "original": "+5.52%",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
     },
     {
       "id": "d-0396",
@@ -7694,10 +8286,10 @@
       "tag": "div",
       "context": "",
       "original": "南油的画像彻底清楚了：外贸 -17.93%、成品油 -18.69%，全靠内贸 +5.52% 撑着。 这与第三节\"毛利率仅 +0.98pct\"、第七节\"唯一被基金加仓\"两处结论完全互证—— 它是三家里唯一主业在萎缩的标的，资金买它买的是补涨预期，不是业绩。",
-      "status": "scope-error",
-      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。",
+      "status": "withdrawn-inference",
+      "ruling": "“外贸−17.93%、成品油−18.69%”来自2025全年，不能断言2026H1主业萎缩。2026H1合并收入+19.37%、归母+42.41%；基金买入动机未取证，“全靠内贸/买的是补涨”撤回。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "来源：金融数据库主营业务构成接口（2026 中报，中远海能披露日 2026-08-29、招商轮船 08-31、招商南油 08-28）；招商轮船分部净利与 Q2 数据转引自国金证券 2026-08-30 研报、长江证券业绩点评、新浪财经研报；中远海能 LNG 归母净利 5.12 亿与内贸毛利率 28.1% 转引自中财网（2026-09-06）。 券商与媒体部分为转引。",
       "searchFamily": "valuation",
@@ -7705,7 +8297,13 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "原行情/净资产版本、PB序列、机构或南向持仓明细、精确起止/复权和窗口未取得；当前第三方页面不能重现旧盘中快照。",
       "locator": "PDF p8-9, p21-22",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15
+        ]
+      }
     },
     {
       "id": "d-0397",
@@ -7887,15 +8485,22 @@
       "tag": "td",
       "context": "原油 | 边际收益（万元/年）",
       "original": "93,389",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应93389（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0407",
@@ -7906,15 +8511,22 @@
       "tag": "td",
       "context": "原油 | 亿元/年",
       "original": "9.34",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应9.3389（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0408",
@@ -7925,15 +8537,22 @@
       "tag": "td",
       "context": "原油 | 边际收益（万元/年）",
       "original": "27,168",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应27168（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0409",
@@ -7944,15 +8563,22 @@
       "tag": "td",
       "context": "原油 | 亿元/年",
       "original": "2.72",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应2.7168（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0410",
@@ -7963,15 +8589,22 @@
       "tag": "td",
       "context": "原油 | 边际收益（万元/年）",
       "original": "7,767",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应7767（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0411",
@@ -7982,15 +8615,22 @@
       "tag": "td",
       "context": "原油 | 亿元/年",
       "original": "0.78",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应0.7767（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0412",
@@ -8001,15 +8641,22 @@
       "tag": "td",
       "context": "成品油 | 船型",
       "original": "LR1",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网p24成品油运输行明确为LR1；标签对应24,952万元。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0413",
@@ -8020,15 +8667,22 @@
       "tag": "td",
       "context": "成品油 | 边际收益（万元/年）",
       "original": "24,952",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应24952（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0414",
@@ -8039,15 +8693,22 @@
       "tag": "td",
       "context": "成品油 | 亿元/年",
       "original": "2.50",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应2.4952（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0415",
@@ -8058,15 +8719,22 @@
       "tag": "td",
       "context": "成品油 | 船型",
       "original": "LR2",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网p24成品油运输行明确为LR2；标签对应14,934万元。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0416",
@@ -8077,15 +8745,22 @@
       "tag": "td",
       "context": "成品油 | 边际收益（万元/年）",
       "original": "14,934",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应14934（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0417",
@@ -8096,15 +8771,22 @@
       "tag": "td",
       "context": "成品油 | 亿元/年",
       "original": "1.49",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应1.4934（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0418",
@@ -8115,15 +8797,22 @@
       "tag": "td",
       "context": "成品油 | 边际收益（万元/年）",
       "original": "11,157",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应11157（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0419",
@@ -8134,15 +8823,22 @@
       "tag": "td",
       "context": "成品油 | 亿元/年",
       "original": "1.12",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应1.1157（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0420",
@@ -8153,15 +8849,22 @@
       "tag": "td",
       "context": "全外贸油轮合计 | 船型",
       "original": "179,367",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应179367（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0421",
@@ -8172,15 +8875,22 @@
       "tag": "td",
       "context": "全外贸油轮合计 | 边际收益（万元/年）",
       "original": "17.95",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "needs-definition",
+      "ruling": "六项系数合计179,367万元=17.9367亿元，按两位小数为17.94，不是17.95；需同方向同幅度全船型TCE变化这一额外情景假设。不能直接当归母净利润或全年实际收益。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "来源：雪球用户基于中远海能 VLCC 船队结构（60 艘，其中自营 48、租出 12，租出按自营 2/3 弹性折算 ≈ 56 艘等效）的测算（2026-09-08），转引自媒体口径， 非公司官方披露，属自建模型，使用前须复核假设 。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
     },
     {
       "id": "d-0422",
@@ -12311,18 +13021,26 @@
       "context": "⚠ 存疑 | 说明",
       "original": "数据源冲突（91.7% vs 40.5%）， 而它是修正后结论的唯一支柱 。",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "d-0638",
@@ -13208,11 +13926,12 @@
       "context": "③ 盈利 | 解读",
       "original": "只有 VLCC 是真的。 Q3 官方：VLCC 277,995 vs MR 31,157， 差 8.9 倍 。南油是跟涨而非兑现。 传导滞后约 1 个季度 ——中远海能管理层：9 月急升的运价 反映在 Q4 业绩中 数据库／管理层",
       "status": "scope-error",
-      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "freight",
@@ -13220,7 +13939,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": "PDF p24/p14/p15",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "s-0044",
@@ -13251,18 +13977,26 @@
       "context": "④ 定价 | 解读",
       "original": "PB 绝对水平是唯一可确认的风险变量 （2019 年同期仅 0.88）。 v3：分位已双源核实，冲突已解 （原报告 2.23–2.88 的区间实为不同日期取值，现统一为 10-13 收盘） 已核实",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "historical",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "同期限FFA及结算值、冻结报价日期、前复权月线、样本选取和异常处理未完整取得。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "s-0046",
@@ -13371,18 +14105,22 @@
       "tag": "td",
       "context": "中远海能 600026 01138.HK | VLCC 艘数",
       "original": "在营 48 艘 = 自有 41 ＋ 租入 7 财通＋官网拆解 管理层／媒体常引 53 艘 （ 疑含 6 艘在建 ）⚠",
-      "status": "secondary-only",
-      "ruling": "找到媒体/社交平台转述或官网拆解文章，未取得同日逐船原表和原始业绩问答；可追踪线索，不认证精确VLCC敞口。",
+      "status": "partial-disclosure",
+      "ruling": "官网推介p17明确自有41、租入7、在营合48，另在建6。旧“53疑含6在建”的解释未被原文支持，保留未知，不把猜测认证。",
       "sources": [
-        "cosco-fleet-secondary",
-        "cosco-qa-secondary"
+        "cosco-presentation-h1-2026"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          17
+        ]
+      }
     },
     {
       "id": "s-0052",
@@ -13453,15 +14191,22 @@
       "tag": "td",
       "context": "中远海能 600026 01138.HK | 结构特征",
       "original": "全球第一大油轮船东（153 艘／2,190 万 DWT），但 VLCC 数量并非第一 ——国金、华创均称其为「 全球第三大 VLCC 船东 」。10 艘租入 VLCC 需付租金 → 弹性被摊薄 。外贸油轮 102 艘／2,043 万 DWT， 中小船远多于招商轮船",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "partial-disclosure",
+      "ruling": "官网推介p17支持总油轮153艘/2190万DWT及VLCC租入7艘；旧“租入VLCC10艘”不符该日期口径。全球排名及另102艘/2043万DWT未闭合，不据此推断盈利被摊薄。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          17
+        ]
+      }
     },
     {
       "id": "s-0056",
@@ -13473,9 +14218,10 @@
       "context": "招商南油 601975 | VLCC 艘数",
       "original": "0 艘 纯 MR 成品油",
       "status": "scope-error",
-      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。",
+      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
@@ -13483,7 +14229,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": "PDF p8-9, p21-22",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "s-0057",
@@ -13494,15 +14247,23 @@
       "tag": "td",
       "context": "招商南油 601975 | H1 业绩",
       "original": "归母 8.12 亿 +42.4% MR 大西洋 5.03 万/天（+100%）、亚太 3.26 万（+52.7%）",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "partial-disclosure",
+      "ruling": "归母8.12亿/+42.41%有原文；p10市场大西洋同比118.77%，非100%，并非公司实现价。不得用行情指数直接认证公司盈利敞口。",
+      "sources": [
+        "nanjing-h1-2026-primary"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          10
+        ]
+      }
     },
     {
       "id": "s-0058",
@@ -13570,15 +14331,23 @@
       "tag": "td",
       "context": "① 仅 VLCC 华创：350天／汇率6.9／税前 | 谁更大／为什么",
       "original": "招商轮船更大（+21%）。 因为它的 VLCC 全部自有 ，中远海能 10 艘为租入、收益要付租金。 反直觉但内部自洽",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "withdrawn-inference",
+      "ruling": "租入VLCC10艘与2026H1官网7艘不符。税前/税后、天数、税率和租约差异均未桥接，不能认证“更纯弹性”或把租入全剔除。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          17,
+          24
+        ]
+      }
     },
     {
       "id": "s-0062",
@@ -13979,15 +14748,23 @@
       "tag": "td",
       "context": "LNG 运输 | 性质",
       "original": "长协底盘。 以期租为主，美伊冲突扰动小。已投运 66 艘，在建 25–31 艘",
-      "status": "unverified",
-      "ruling": "原报告缺可复核的原始记录/精确出处，本轮不认证；不得作为确定投资结论",
-      "sources": [],
+      "status": "partial-disclosure",
+      "ruling": "官网p18截至2026-06-30：LNG投运66、在建31；其中全资上海平台36投运/25在建，CLNG30/6，另1艘光租船不计该表。25与31是平台范围，不能任意给成全船队区间。长期租约披露不证明无风险。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "freight",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "round2 exact source-page review; compound unsupported portions retained",
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          3,
+          18
+        ]
+      }
     },
     {
       "id": "s-0081",
@@ -14447,18 +15224,26 @@
       "context": "PB 与股价 | 失效判据",
       "original": "估值位置是本盘确认的唯一风险变量， 却用了未标时点的数值 ——下次更新必须补时点",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "valuation",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "原行情/净资产版本、PB序列、机构或南向持仓明细、精确起止/复权和窗口未取得；当前第三方页面不能重现旧盘中快照。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "s-0105",
@@ -15013,18 +15798,26 @@
       "context": "",
       "original": "直接推翻「 只有 VLCC 是真的 」这一核心判断。观察南油 MR 大西洋航线（H1 5.03 万/天）是否脱离独立定价体系",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "supply-demand",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "s-0134",
@@ -15245,11 +16038,12 @@
       "context": "",
       "original": "景气是真是假？ → 真，但 只有 VLCC 是真的 （毛利率 +18.51pct vs +0.98pct；Q3 官方 VLCC 是 MR 的 8.9 倍）。",
       "status": "scope-error",
-      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "company",
@@ -15257,7 +16051,14 @@
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "locator": "PDF p24/p14/p15",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "s-0146",
@@ -15310,18 +16111,26 @@
       "context": "",
       "original": "回撤幅度会有多大？ → 历史两次：运价 −98%、股价见顶后 −50%。",
       "status": "withdrawn-inference",
-      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
       "sources": [
         "cmes-h1-2026",
         "cosco-h1-2026",
-        "nanjing-h1-2026-mirror"
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
       ],
       "sourceClaimed": "原报告未为该单元提供可直接定位的源链接或原始记录，见其章节/总来源声明。",
       "searchFamily": "valuation",
       "activeUse": false,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "原行情/净资产版本、PB序列、机构或南向持仓明细、精确起止/复权和窗口未取得；当前第三方页面不能重现旧盘中快照。",
-      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification"
+      "auditMode": "deterministic classification + targeted source review; composite statements retain unverified parts; not automated authenticity certification",
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
     },
     {
       "id": "s-0149",
@@ -17634,17 +18443,5 @@
       "auditMode": "script options extracted in isolated Node context, not benchmark verification",
       "sourceClaimed": "原图固定输入，无逐点原始证据；定位见context。"
     }
-  ],
-  "frozenReports": [
-    {
-      "file": "油运行业数据拆解-20261014.html",
-      "sha256": "a45f6b4346a805146904050e966d95d32bedd33c586a3b88051f9957d7311d97"
-    },
-    {
-      "file": "油运行业状态仪表盘-20261014.html",
-      "sha256": "3584e3f61c663b88b36e67bcc0dd137bde26294ea92db707d0453fe09ba99e25"
-    }
-  ],
-  "textUnits": 791,
-  "chartInputs": 125
+  ]
 }

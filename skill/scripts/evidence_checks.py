@@ -61,7 +61,7 @@ def exposure_bridge(p):
 def review(p):
     if not isinstance(p,dict):raise ValueError('输入必须为对象')
     results={}
-    for key,fn in [('margin',margin_compare),('freight',freight_error),('sources',source_roots),('exposure',exposure_bridge),('valuation',valuation_series)]:
+    for key,fn in [('margin',margin_compare),('freight',freight_error),('sources',source_roots),('exposure',exposure_bridge),('valuation',valuation_series),('identity',identity_compare)]:
         if key in p:results[key]=fn(p[key])
     if not results:raise ValueError('至少提供一项核对')
     return {'status':'comparison-guards','sourceVerified':False,'results':results}
@@ -88,6 +88,22 @@ def valuation_series(p):
     dates.sort();gaps=[(b-a).days for a,b in zip(dates,dates[1:])]
     if p['samplingBasis']=='calendar-daily' and (any(g!=1 for g in gaps) or dates[0]!=start):raise ValueError('不能将稀疏或缺段序列声明为自然日日频')
     return {'status':'declared-vendor-recomputation','count':len(values),'firstDate':dates[0].isoformat(),'lastDate':dates[-1].isoformat(),'gapDays':sorted(set(gaps)),'strictLessPercentile':sum(v<current for v in values)/len(values),'ties':sum(v==current for v in values),'pointInTimeCertified':False,'retrievedAfterAsOf':retrieved>asof,'limits':'只复算声明样本；不认证历史可得性、净资产口径或估值风险。窗口名称不能替代实际日期和采样。'}
+
+def identity_compare(p):
+    """Match declared security, period and units; not a source certificate."""
+    a=p['claim'];b=p['evidence'];asof=date.fromisoformat(p['asOf'])
+    for row in (a,b):
+        period(row)
+        for key in ('symbol','metric','unit','definition'):
+            if not isinstance(row.get(key),str) or not row[key].strip():raise ValueError('身份口径缺少'+key)
+    if date.fromisoformat(b['publishedAt'])>asof or date.fromisoformat(b['end'])>asof:
+        return {'status':'blocked','reason':'证据在研究时点尚未发布或观察期未结束'}
+    keys=('symbol','start','end','metric','unit','definition')
+    mismatch=[key for key in keys if a[key]!=b[key]]
+    if mismatch:return {'status':'blocked','mismatchFields':mismatch,'reason':'公司/期间/指标/单位/定义不匹配，不能替换或认证'}
+    delta=number(number(a['value'],'claim value')-number(b['value'],'evidence value'),'computed difference')
+    tolerance=number(p.get('absoluteTolerance',0),'absoluteTolerance',0)
+    return {'status':'declared-match' if abs(delta)<=tolerance else 'declared-value-conflict','difference':delta,'tolerance':tolerance,'sourceVerified':False,'limits':'声明字段匹配，不认证原文真伪、权益实施到账或因果；不要擅自填写未知期间/税费'}
 
 def main():
     ap=argparse.ArgumentParser(description='口径和来源链反例核对，不认证证据');ap.add_argument('--input',required=True);args=ap.parse_args()

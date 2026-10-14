@@ -1,0 +1,1647 @@
+{
+  "reviewedAt": "2026-10-14",
+  "baselineCommit": "3c07e88531d6398afbbcb6caa144894eaf1aac5a",
+  "scope": "来源升级与具体期间/实体纠错，未闭合保留；不把发布系数认成归母实际利润。",
+  "changed": 107,
+  "changes": [
+    {
+      "id": "d-0002",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0010",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0017",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0046",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0083",
+      "previousStatus": "supported-mirror",
+      "status": "supported-disclosure",
+      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0086",
+      "previousStatus": "supported-mirror",
+      "status": "supported-disclosure",
+      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0089",
+      "previousStatus": "recomputed",
+      "status": "recomputed",
+      "ruling": "同一半年合并营业收入和营业成本复算相符；简单毛利率未额外扣营业税金，不与报告分部含税口径混用。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0090",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0091",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0092",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0093",
+      "previousStatus": "needs-definition",
+      "status": "needs-definition",
+      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0094",
+      "previousStatus": "needs-definition",
+      "status": "needs-definition",
+      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0095",
+      "previousStatus": "needs-definition",
+      "status": "needs-definition",
+      "ruling": "净利率应先明确合并净利润或归母净利润。不同分子不直接互相验证；原表未明确，保留口径缺口。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0103",
+      "previousStatus": "supported-mirror",
+      "status": "supported-disclosure",
+      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0110",
+      "previousStatus": "unverified",
+      "status": "partial-disclosure",
+      "ruling": "半年报p14正文经营、管理VLOC37艘；p17自有分类34艘，范围不同。VLCC与干散等布局支持；“世界第一”是公司披露自述，未独立取得全球船队排名底稿。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          14,
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0223",
+      "previousStatus": "supported-mirror",
+      "status": "supported-disclosure",
+      "ruling": "披露原文支持该金额及表列同比。文件未经审计；不支持额外投资结论。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0224",
+      "previousStatus": "supported-mirror",
+      "status": "supported-disclosure",
+      "ruling": "购建固定资产、无形资产及其他长期资产支付现金支持该数值，不等于本期新增造船订单或全投资支出。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0228",
+      "previousStatus": "unverified",
+      "status": "contradicted",
+      "ruling": "旧列在招商轮船名下10派2.8错位。招商轮船2026H1方案每10股1.30元。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          36
+        ]
+      }
+    },
+    {
+      "id": "d-0229",
+      "previousStatus": "unverified",
+      "status": "contradicted",
+      "ruling": "旧列在招商轮船名下10派3.8/7-17错位；招商轮船2025末期每股0.25元，登记7-9、除息及发放7-10。",
+      "sources": [
+        "cmes-dividend-2025"
+      ],
+      "sourcePages": {
+        "cmes-dividend-2025": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "d-0232",
+      "previousStatus": "unverified",
+      "status": "contradicted",
+      "ruling": "旧列在中远海能名下10派1.3错位；中远海能2026H1方案每股0.28元，即10派2.8。方案不等于已到账。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "d-0233",
+      "previousStatus": "unverified",
+      "status": "contradicted",
+      "ruling": "旧列在中远海能名下10派2.5/7-10错位；中远海能2025年度每股0.38元，登记7-16、除息及发放7-17。此处为A股实施公告。",
+      "sources": [
+        "cosco-dividend-2025"
+      ],
+      "sourcePages": {
+        "cosco-dividend-2025": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "d-0236",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "南油2025年度A股每股0.027元=10派0.27，登记5-26、除息及发放5-27。与未新增2026中期方案不冲突。",
+      "sources": [
+        "njtc-dividend-2025"
+      ],
+      "sourcePages": {
+        "njtc-dividend-2025": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "d-0239",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0256",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0281",
+      "previousStatus": "unverified",
+      "status": "partial-disclosure",
+      "ruling": "p17运力表VLCC在建15艘、p16本期新签VLCC10艘均有披露；截至2026H1，不认证随后订单增减或全行业供给墙。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0283",
+      "previousStatus": "unverified",
+      "status": "partial-disclosure",
+      "ruling": "官网2026H1推介p3/p17：VLCC在营48艘=自有41+租入7，另在建6。旧53艘其他日期/范围未取得，不能因48+6就认证53或其成因。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          3,
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0284",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p17：VLCC在建6艘，预计2027—2028交付。是截至2026-06-30订单情况，非已交付或确定未来运力。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0286",
+      "previousStatus": "unverified",
+      "status": "partial-disclosure",
+      "ruling": "南油H1 p10披露市场大西洋一揽子50,289美元/日，同比118.77%；亚太32,606，同比增长52.74%。这是市场平均，非该公司实现价；旧同比“翻倍”丢失精度。",
+      "sources": [
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          10
+        ]
+      }
+    },
+    {
+      "id": "d-0288",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "d-0346",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。外贸原油收入8,273,217千元，折82.73217亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0347",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为58.4%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0348",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。外贸成品油收入1,152,158千元，折11.52158亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0349",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为0.1%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0350",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。外贸油轮出租收入1,097,894千元，折10.97894亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0351",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。内贸原油收入1,658,936千元，折16.58936亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0352",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为4.5%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0353",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。内贸成品油收入965,973千元，折9.65973亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0354",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为−12.6%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0356",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第17页支持该限定数值。LNG运输收入15.20亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0357",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第17页支持该限定数值。LNG运输收入同比22.20%。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0358",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第17页支持该限定数值。LNG板块归母净利润5.12亿元，同比增长20.75%；不能与内贸毛利直接相加成归母底座。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0359",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。化学品运输收入198,755千元，折1.98755亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0360",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为24.3%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0361",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第15页支持该限定数值。LPG运输收入178,728千元，折1.78728亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0362",
+      "previousStatus": "unverified",
+      "status": "contradicted",
+      "ruling": "2026H1 LPG运输收入同比24.9%（半年报p15、p17），不是旧表27.22%。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          15,
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0363",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1半年报第16页支持该限定数值。国际运输收入12,252,377千元、国内运输2,872,982千元，分别122.52377和28.72982亿元。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0364",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "半年报相应行公布同比为国际40.6%、国内−1.1%，旧文额外精度或其他版本同比缺计算底稿，不把补零或不同重述口径视为精确认证。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0365",
+      "previousStatus": "unverified",
+      "status": "withdrawn-inference",
+      "ruling": "LNG归母增长20.75%、内贸毛利增长14.7%，不能统称不增长。毛利加归母再年化并除以2026E预测，期间和利润层次不一致；“运价归零仍有20亿盈利底座”“80%暴露”撤回。",
+      "sources": [
+        "cosco-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-h1-2026": [
+          14,
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "id": "d-0366",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：油轮收入95.83亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0367",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "原表将低精度结果扩成两位小数；公司精确披露同比为115.66%（保留一位可写115.7%）。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0368",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：油轮分部净利润61.89亿元，非独立VLCC归母。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0369",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：油轮分部净利润同比378.62%。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0370",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：干散货收入51.20亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0371",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "原表将低精度结果扩成两位小数；公司精确披露同比为38.34%。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0372",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：干散货分部净利润11.79亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0373",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：干散货分部净利润同比179.37%。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0374",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：集装箱收入29.75亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0375",
+      "previousStatus": "unverified",
+      "status": "contradicted",
+      "ruling": "原表同比与2026H1公司p16分部表不符，正确披露为−1.47%。禁止凭标签猜测适用列。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0376",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：集装箱分部净利润5.80亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0377",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：滚装收入9.82亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0378",
+      "previousStatus": "unverified",
+      "status": "contradicted",
+      "ruling": "原表同比与2026H1公司p16分部表不符，正确披露为20.34%。禁止凭标签猜测适用列。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0379",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：滚装分部净利润2.04亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0380",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：滚装分部净利润同比92.00%。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0381",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：LNG收入1.39亿元。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0382",
+      "previousStatus": "unverified",
+      "status": "contradicted",
+      "ruling": "原表同比与2026H1公司p16分部表不符，正确披露为4,600.05%（收入）；10.56%（分部净利润）。禁止凭标签猜测适用列。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0383",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "2026H1公司分部表p16支持：LNG分部净利润3.57亿元，受合联营投资等影响；不能把收入减成本当全部利润。分部口径不等于合并归母。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "d-0385",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0386",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0387",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0388",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0389",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0390",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0391",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0392",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0393",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0394",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0395",
+      "previousStatus": "unverified",
+      "status": "period-conflict",
+      "ruling": "查到原数来自招商南油2025年年报p17—18：成品油30.49698亿/−18.69%、原油20.15490亿、化学品3.93128亿/−15.72%、乙烯1.85987亿/−6.39%、外贸34.07700亿/−17.93%、内贸24.05755亿/+5.52%。旧表标2026H1造成跨期混用，必须移到2025FY历史栏，不用于当前经营结论。",
+      "sources": [
+        "njtc-fy2025"
+      ],
+      "sourcePages": {
+        "njtc-fy2025": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "d-0396",
+      "previousStatus": "scope-error",
+      "status": "withdrawn-inference",
+      "ruling": "“外贸−17.93%、成品油−18.69%”来自2025全年，不能断言2026H1主业萎缩。2026H1合并收入+19.37%、归母+42.41%；基金买入动机未取证，“全靠内贸/买的是补涨”撤回。",
+      "sources": [
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15
+        ]
+      }
+    },
+    {
+      "id": "d-0406",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应93389（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0407",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应9.3389（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0408",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应27168（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0409",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应2.7168（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0410",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应7767（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0411",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应0.7767（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0412",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网p24成品油运输行明确为LR1；标签对应24,952万元。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0413",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应24952（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0414",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应2.4952（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0415",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网p24成品油运输行明确为LR2；标签对应14,934万元。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0416",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应14934（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0417",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应1.4934（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0418",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应11157（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0419",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应1.1157（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0420",
+      "previousStatus": "unverified",
+      "status": "supported-presentation",
+      "ruling": "官网推介p24发布六类即期外贸油轮边际收益，单位人民币万元。该条对应179367（按原条单位换算）；表中未注明测算天数和税前/税后，不能认证全年税后归母利润。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0421",
+      "previousStatus": "unverified",
+      "status": "needs-definition",
+      "ruling": "六项系数合计179,367万元=17.9367亿元，按两位小数为17.94，不是17.95；需同方向同幅度全船型TCE变化这一额外情景假设。不能直接当归母净利润或全年实际收益。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          24
+        ]
+      }
+    },
+    {
+      "id": "d-0637",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "s-0043",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "s-0045",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "s-0051",
+      "previousStatus": "secondary-only",
+      "status": "partial-disclosure",
+      "ruling": "官网推介p17明确自有41、租入7、在营合48，另在建6。旧“53疑含6在建”的解释未被原文支持，保留未知，不把猜测认证。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          17
+        ]
+      }
+    },
+    {
+      "id": "s-0055",
+      "previousStatus": "unverified",
+      "status": "partial-disclosure",
+      "ruling": "官网推介p17支持总油轮153艘/2190万DWT及VLCC租入7艘；旧“租入VLCC10艘”不符该日期口径。全球排名及另102艘/2043万DWT未闭合，不据此推断盈利被摊薄。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          17
+        ]
+      }
+    },
+    {
+      "id": "s-0056",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "招商南油披露原油、成品油、化学品、气体与劳务业务，不能称纯MR或“只能补涨”。H1已实施分红0.027元/股，2025回购约4亿元，半年度无新增预案不等于无回报。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "s-0057",
+      "previousStatus": "unverified",
+      "status": "partial-disclosure",
+      "ruling": "归母8.12亿/+42.41%有原文；p10市场大西洋同比118.77%，非100%，并非公司实现价。不得用行情指数直接认证公司盈利敞口。",
+      "sources": [
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          10
+        ]
+      }
+    },
+    {
+      "id": "s-0061",
+      "previousStatus": "unverified",
+      "status": "withdrawn-inference",
+      "ruling": "租入VLCC10艘与2026H1官网7艘不符。税前/税后、天数、税率和租约差异均未桥接，不能认证“更纯弹性”或把租入全剔除。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          17,
+          24
+        ]
+      }
+    },
+    {
+      "id": "s-0080",
+      "previousStatus": "unverified",
+      "status": "partial-disclosure",
+      "ruling": "官网p18截至2026-06-30：LNG投运66、在建31；其中全资上海平台36投运/25在建，CLNG30/6，另1艘光租船不计该表。25与31是平台范围，不能任意给成全船队区间。长期租约披露不证明无风险。",
+      "sources": [
+        "cosco-presentation-h1-2026"
+      ],
+      "sourcePages": {
+        "cosco-presentation-h1-2026": [
+          3,
+          18
+        ]
+      }
+    },
+    {
+      "id": "s-0104",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "s-0133",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "s-0145",
+      "previousStatus": "scope-error",
+      "status": "scope-error",
+      "ruling": "旧值为2026H1对2025全年，不是同比。统一2026H1对2025H1合并营业收入/成本复算变动约21.43/18.23/3.65个百分点（中远上期重述），不能推出“只有VLCC景气”。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    },
+    {
+      "id": "s-0148",
+      "previousStatus": "withdrawn-inference",
+      "status": "withdrawn-inference",
+      "ruling": "撤回超出证据的唯一性/因果/普遍规律判断。不同业务、基期、会计调整、成本、资产处置和未知样本均需区分；数字自洽不识别真实口径。 第二轮取得巨潮原版，与新浪镜像SHA256相同；属于同一披露源，不增加独立证据数。",
+      "sources": [
+        "cmes-h1-2026",
+        "cosco-h1-2026",
+        "nanjing-h1-2026-mirror",
+        "nanjing-h1-2026-primary"
+      ],
+      "sourcePages": {
+        "nanjing-h1-2026-primary": [
+          6,
+          15,
+          52
+        ]
+      }
+    }
+  ]
+}

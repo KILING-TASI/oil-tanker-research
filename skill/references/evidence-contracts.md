@@ -11,3 +11,5 @@
 - `valuation`：source、netAssetBasis、samplingBasis、asOf、retrievedAt、start/end、currentDate、current、observations（date/value列表）。重复、越界、非有限值和末日不一致拒绝。calendar-daily必须自然日连续完整；vendor-sampled只如实列间隔。返回样本严格小于分位、并列数和实际起止。历史净资产与发布时间需要另外取得，任何声明都不会把pointInTimeCertified改为true。
 
 不要把范围未知填成零，或把转载、原文取得、算术复算、预测和投资结论合并成一个“已核实”。股票代码与公司全称也须核对，不能将中远海能600026与其他中远系公司混淆。身份、来源真伪和真实历史可得性仍须人工证据。
+
+- `identity`：asOf、claim、evidence；两对象各含symbol、start/end、metric、unit、definition、value；evidence另含publishedAt。公司、完整期间、指标、单位及定义必须相同；证据不得晚于研究时点。absoluteTolerance可声明绝对误差（默认0），输出差额，不认证来源。不得把年报贴为半年报，或交换两家分红。未知税费/期间不填写为默认值。

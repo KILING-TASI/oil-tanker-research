@@ -1,0 +1,133 @@
+{
+  "asOf": "2026-10-14",
+  "scope": "摘录事实与声明计算；未知期间和税费保留null，不将预测当实际；来源原文不再分发",
+  "dividends": [
+    {
+      "symbol": "601872",
+      "metric": "dividend-per-share",
+      "unit": "CNY/share",
+      "value": 0.25,
+      "allocation": "2025末期",
+      "status": "implementation-notice",
+      "recordDate": "2026-07-09",
+      "exDate": "2026-07-10",
+      "paymentDate": "2026-07-10",
+      "source": "cmes-dividend-2025",
+      "page": 1
+    },
+    {
+      "symbol": "600026",
+      "metric": "dividend-per-share",
+      "unit": "CNY/share",
+      "value": 0.38,
+      "allocation": "2025年度",
+      "status": "implementation-notice",
+      "recordDate": "2026-07-16",
+      "exDate": "2026-07-17",
+      "paymentDate": "2026-07-17",
+      "source": "cosco-dividend-2025",
+      "page": 1
+    },
+    {
+      "symbol": "601975",
+      "metric": "dividend-per-share",
+      "unit": "CNY/share",
+      "value": 0.027,
+      "allocation": "2025年度",
+      "status": "implementation-notice",
+      "recordDate": "2026-05-26",
+      "exDate": "2026-05-27",
+      "paymentDate": "2026-05-27",
+      "source": "njtc-dividend-2025",
+      "page": 1
+    },
+    {
+      "symbol": "601872",
+      "unit": "CNY/share",
+      "value": 0.13,
+      "allocation": "2026H1",
+      "status": "half-year-proposal",
+      "source": "cmes-h1-2026",
+      "page": 36
+    },
+    {
+      "symbol": "600026",
+      "unit": "CNY/share",
+      "value": 0.28,
+      "allocation": "2026H1",
+      "status": "half-year-proposal",
+      "source": "cosco-h1-2026",
+      "page": 2
+    }
+  ],
+  "sensitivity": {
+    "symbol": "600026",
+    "source": "cosco-presentation-h1-2026",
+    "page": 24,
+    "inputDeltaTceUsdPerDay": 10000,
+    "unit": "CNY 10000",
+    "reportedMeasure": "边际收益",
+    "components": [
+      {
+        "vessel": "VLCC",
+        "value": 93389
+      },
+      {
+        "vessel": "Aframax",
+        "value": 27168
+      },
+      {
+        "vessel": "Handysize crude",
+        "value": 7767
+      },
+      {
+        "vessel": "LR2",
+        "value": 14934
+      },
+      {
+        "vessel": "LR1",
+        "value": 24952
+      },
+      {
+        "vessel": "Handysize product",
+        "value": 11157
+      }
+    ],
+    "sum": 179367,
+    "sumCny": 1793670000,
+    "days": null,
+    "taxBasis": null,
+    "attributableProfitBridge": null,
+    "scope": "自有及租入、投入即期市场运营的外贸油轮；同方向同幅度情景加总，不认证全年税后归母"
+  },
+  "fleet": {
+    "symbol": "600026",
+    "asOf": "2026-06-30",
+    "source": "cosco-presentation-h1-2026",
+    "page": 17,
+    "vlccOwned": 41,
+    "vlccCharteredIn": 7,
+    "vlccOperating": 48,
+    "vlccOrders": 6,
+    "allTankersOwned": 140,
+    "allTankersCharteredIn": 13,
+    "allTankersOperating": 153,
+    "allTankersOrders": 38
+  },
+  "wrongPeriod": {
+    "symbol": "601975",
+    "correctPeriod": "2025FY",
+    "incorrectClaimPeriod": "2026H1",
+    "source": "njtc-fy2025",
+    "pages": [
+      17,
+      18
+    ],
+    "productRevenueCny": 3049698478.29,
+    "productRevenueYoyPct": -18.69,
+    "foreignRevenueCny": 3407700106.95,
+    "foreignRevenueYoyPct": -17.93,
+    "domesticRevenueCny": 2405755183.25,
+    "domesticRevenueYoyPct": 5.52
+  }
+}
