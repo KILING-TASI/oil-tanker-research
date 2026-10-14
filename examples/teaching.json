@@ -1,0 +1,8 @@
+{
+ "asOf":"2026-10-14",
+ "basis":"原创合成教学，非真实公司或行情。USD和CNY分别列明；浮舱假设同油种同地点90天；船队同一艘数口径；弹性为声明年度350天；分位为教学固定序列。",
+ "storage":{"days":90,"cargoBarrels":2000000,"dailyHireUsd":50000,"oilPriceUsdPerBarrel":70,"annualFundingRate":0.05,"otherCostsUsd":200000,"forwardSpreadUsdPerBarrel":5},
+ "capacity":{"total":100,"restricted":20,"oldExcluded":30,"overlap":10},
+ "earnings":{"operatingVessels":40,"earningDays":350,"deltaTceUsdPerDay":10000,"cnyPerUsd":7,"spotExposure":0.8,"taxRate":0.25},
+ "percentile":{"current":2,"values":[1,2,2,3]}
+}

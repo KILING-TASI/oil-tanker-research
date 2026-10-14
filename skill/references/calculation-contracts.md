@@ -1,0 +1,53 @@
+# 方法与口径
+
+本仓计算为原创条件算术，不重现机构模型，不认证已发布案例数据。
+
+## 浮舱
+
+资金成本 = 油价 × 桶数 × 年化资金率 × 天数 / 365。
+
+所需同期限价差 =（日租 × 天数 + 资金成本 + 其他成本）/ 桶数。
+
+净carry =（声明远期价差 − 所需价差）× 桶数。`otherCostsUsd` 必须显式给出，含装卸、保险、损耗等声明总额；输入0只表示假设为0，不代表实际没有成本。日租应为适用于浮舱的租约成本，不把航线TCE自动当可租船日租。不同期限、地点和油种不可直接比较。本模型未处理动态保证金、便利收益、实物信用和交易执行。
+
+## 船队集合去重
+
+剩余 = 总量 − 受限集合 − 老船排除集合 + 交集。交集需处于 `[max(0,A+B-total), min(A,B)]`；未知交集只输出上下界。输入为统一单位的声明集合量，不能混用艘数与DWT。两集合之外的等待、速度和船货适配没有自动折算。
+
+## TCE弹性
+
+声明期间税前增量人民币 = 在营船数 × 盈利天数 × TCE变化美元/天 × 人民币/美元 × 现货敞口。
+
+税后机械增量 = 税前增量 ×（1−税率）。不保证负情景抵税，不含租约分成、成本变化、汇率套保和非油运业务。船型、期间、自有/租入、合并权益口径须在basis说明。不能直接作为净利润预测。反推船数时若弹性用“亿元”、TCE变化为一万美元，隐含船数 = 弹性亿元 × 10000 /（汇率 × 天数 × 敞口 × 税后系数），各项需同口径。
+
+## 经验分位
+
+严格小于当前值的样本数 / 全部声明样本数；并列值不算小于，另报并列数。窗口、日期、频率及是否包含当日决定分母。程序不认证输入序列完整、历史净资产可得性或估值风险。
+
+## 输入与输出
+
+见 仓库examples/teaching.json（单独Skill可按下列字段准备自己的JSON）。顶层需 `asOf`（YYYY-MM-DD）和非空 `basis`；计算模块可任选。数值必须有限，比例0至1；缺字段不补零。输出文件拒绝覆盖。`sourceVerified=false` 始终保留，程序没有联网或来源认证功能。
+
+## 官方方法参考
+
+- [Baltic FFA定义](https://www.balticexchange.com/en/FFAS/About-FFAs/what-are-ffas-.html)：现金结算合约，不附实物交付。
+- [Baltic结算说明](https://www.balticexchange.com/en/FFAS/How-to-trade-an-FFA/Part-four-Settlement.html)：月度平均指数结算；瞬时现货不能直接当同期限实现值。
+- [Baltic市场基准指南](https://www.balticexchange.com/content/dam/balticexchange/consumer/data-services-/documents-/ocean-bulk/GMB.pdf)：航线TCE扣除燃油和航次成本，再除以航次总天数；船东OPEX、融资等仍需另外区分。
+
+- [Worldscale官方说明](https://www.worldscale.co.uk/help)：WS100是对应年度与航线flat rate的100%；标准船假设不等于每家公司保本点。
+
+核对日期：2026-10-14。以上链接支持定义，不支持旧报告中的具体2026数值或预测准确率。
+
+
+## 单独Skill调用
+
+在Skill根目录运行 `python scripts/research_checks.py --input 用户资料.json`。顶层asOf、basis必填，各模块字段如下：
+
+| 模块 | 字段（均必填，除明确可缺项） |
+|---|---|
+| storage | days、cargoBarrels、dailyHireUsd、oilPriceUsdPerBarrel、annualFundingRate、otherCostsUsd、forwardSpreadUsdPerBarrel |
+| capacity | total、restricted、oldExcluded；overlap可缺或null，返回范围 |
+| earnings | operatingVessels、earningDays、deltaTceUsdPerDay、cnyPerUsd、spotExposure、taxRate |
+| percentile | current、values（1至100000个有限数字） |
+
+所有模块可任选。JSON不要使用NaN/Infinity；比例用0至1。这里没有真实行情、数据库接口或预填判断。
