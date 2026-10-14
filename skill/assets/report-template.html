@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>油运行业数据拆解 · {DATE}</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; background: #f5f6f7; color: #1f2328; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif; line-height: 1.7; font-size: 14px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 28px 20px 60px; }
+h1 { font-size: 24px; font-weight: 600; margin: 0 0 6px; }
+.sub { color: #6b7280; font-size: 13px; margin-bottom: 22px; }
+h2 { font-size: 18px; font-weight: 600; margin: 34px 0 14px; padding-left: 10px; border-left: 4px solid #c0392b; }
+h3 { font-size: 15px; font-weight: 600; margin: 20px 0 10px; color: #374151; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 18px 20px; margin-bottom: 16px; }
+.tldr { background: #fff; border: 1px solid #e5e7eb; border-left: 4px solid #c0392b; border-radius: 10px; padding: 18px 22px; margin-bottom: 22px; }
+.tldr ul { margin: 8px 0 0; padding-left: 20px; }
+.tldr li { margin-bottom: 8px; }
+.kpi { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+.kpi .box { flex: 1 1 180px; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px 16px; }
+.kpi .box .lab { font-size: 12px; color: #6b7280; }
+.kpi .box .val { font-size: 22px; font-weight: 600; margin-top: 4px; }
+.kpi .box .note { font-size: 12px; color: #9ca3af; margin-top: 2px; }
+/* 中国习惯：涨红跌绿 */
+.up { color: #c0392b; }
+.down { color: #1d9e75; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: right; }
+th { background: #fafafa; font-weight: 600; text-align: center; }
+td:first-child, th:first-child { text-align: left; }
+.src { font-size: 12px; color: #9ca3af; margin-top: 8px; }
+.warn { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 12px 14px; font-size: 13px; margin-top: 12px; }
+.key { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 12px 14px; font-size: 13px; margin-top: 12px; }
+details { margin-top: 10px; }
+summary { cursor: pointer; color: #2563eb; font-size: 13px; }
+.tag { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px; background: #f3f4f6; color: #6b7280; margin-left: 4px; }
+.tag.hot { background: #fef2f2; color: #c0392b; }
+.disc { margin-top: 40px; font-size: 12px; color: #6b7280; border-top: 1px solid #e5e7eb; padding-top: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>{标题}</h1>
+<div class="sub">数据时点：{行情时点}；财务为 {报告期}；运价为 {运价时点}。四层传导链：供需驱动 → 运价 → 公司盈利 → 定价与交易。</div>
+
+<div class="tldr">
+<b>核心结论（TL;DR）</b>
+<ul>
+<li>{结论一}</li>
+<li>{结论二}</li>
+</ul>
+</div>
+
+<div class="kpi">
+<div class="box"><div class="lab">{指标}</div><div class="val up">{值}</div><div class="note">{口径}</div></div>
+<div class="box"><div class="lab">{指标}</div><div class="val">{值}</div><div class="note">{口径}</div></div>
+<div class="box"><div class="lab">{指标}</div><div class="val down">{值}</div><div class="note">{口径}</div></div>
+<div class="box"><div class="lab">{指标}</div><div class="val">{值}</div><div class="note">{口径}</div></div>
+</div>
+
+<h2>一、{章节}</h2>
+<div class="card">
+<div id="chart_demo" style="width:100%;height:340px;"></div>
+<div class="src">来源：{来源与时点}。<b>非一手，需核原文。</b></div>
+
+<table>
+<tr><th>{列}</th><th>{列}</th><th>{列}</th></tr>
+<tr><td>{值}</td><td>{值}</td><td class="up">{值}</td></tr>
+</table>
+
+<div class="key"><b>{关键发现}</b>{正文}</div>
+<div class="warn"><b>{风险或分歧}</b>{正文}</div>
+</div>
+
+<h2>二、数据缺口与后续跟踪清单</h2>
+<div class="card">
+<p>{说明}</p>
+<table>
+<tr><th>优先级</th><th>剩余缺失</th><th>获取途径</th><th>为什么还需要</th></tr>
+<tr><td class="up">高</td><td>{缺失项}</td><td>{途径}</td><td>{原因}</td></tr>
+</table>
+<div class="key"><b>最短验证路径：</b>{按信号先后排列的跟踪指标}</div>
+</div>
+
+<div class="disc">
+<b>免责声明</b>：以上内容基于公开数据和量化分析，仅供参考，不构成投资建议。市场有风险，投资需谨慎。<br><br>
+数据说明：{各数据块来源与时点}。<b>转引数据已各处标注，使用前请核实原文。</b>
+</div>
+
+<script>
+var optDemo = {
+  title: { text: '{图标题}', left: 'center', top: 6, textStyle: { fontSize: 14, color: '#1f2937' } },
+  tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+  grid: { left: 60, right: 30, top: 60, bottom: 80 },
+  xAxis: { type: 'category', data: ['{类目}'], axisLabel: { fontSize: 11, color: '#374151', interval: 0 }, axisLine: { lineStyle: { color: '#9ca3af' } } },
+  yAxis: { type: 'value', name: '{单位}', nameTextStyle: { fontSize: 11, color: '#6b7280' }, axisLabel: { fontSize: 11, color: '#374151' }, splitLine: { lineStyle: { color: '#e5e7eb' } } },
+  series: [{
+    type: 'bar',
+    barWidth: '52%',
+    data: [
+      { value: 10, itemStyle: { color: '#185FA5' } },
+      { value: 20, itemStyle: { color: '#e08b3c' } },
+      { value: 30, itemStyle: { color: '#c0392b' } }
+    ],
+    label: { show: true, position: 'top', fontSize: 11, color: '#374151' }
+  }]
+};
+echarts.init(document.getElementById('chart_demo')).setOption(optDemo);
+</script>
+</div>
+</body>
+</html>
