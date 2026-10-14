@@ -1,0 +1,4 @@
+interface:
+  display_name: "油运行业研究"
+  short_description: "从运输供需、航线运价到公司盈利与估值，给出有证据、有边界的研究判断"
+  default_prompt: "使用 $oil-tanker-research 分析我的油运问题，解释当前判断、关键证据、反证与尚缺资料。"

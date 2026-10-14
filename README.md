@@ -48,6 +48,24 @@ python skill/scripts/check_report.py skill/assets/dashboard-template.html
 
 将 `skill` 完整目录放到支持本地 Skill 的助手目录，并按该助手规则注册；只复制 SKILL.md 会丢失脚本、模板和引用资料。Skill 名称为 `oil-tanker-research`，不依赖其他研究仓库，不假定任何数据库接口或付费账号已经可用。不执行交易。
 
+## 独立 Skill 成品
+
+Skill 包含中文调用入口、研究框架、底稿模板和合成离线示例。安装后进入 Skill 目录，最短验证：
+
+```console
+python scripts/research_checks.py --input examples/earnings-scenario.json
+```
+
+示例应输出税前机械增量10,500,000元、税后机械增量7,875,000元，并保留`sourceVerified: false`。这是教学参数，不是公司预测。文字研究无需运行Python。
+
+需要独立安装包时，从仓库根目录运行：
+
+```console
+python tools/package_skill.py --output oil-tanker-research-skill.zip
+```
+
+解压后将完整`oil-tanker-research`目录放入所用助手的Skill目录，按其注册规则加载；调用名称为`$oil-tanker-research`。包内含MIT、第三方权利说明及SHA256文件清单，不含旧报告、取证原文和缓存。打包工具拒绝覆盖已有文件。
+
 ## 历史案例
 
 - [重新取证、纠错与916项台账](evidence-review.html)：原文支持、供应商复算、转引、口径冲突和未完成取证分别列示，可检索；旧报告791个文本单元均已添加对应复核链接，125个图表固定输入另列。

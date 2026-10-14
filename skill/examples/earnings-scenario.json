@@ -1,0 +1,12 @@
+{
+  "asOf": "2026-10-14",
+  "basis": "原创合成教学：同一船型10艘，声明全年300个盈利船日；现货敞口50%，汇率7人民币/美元，税率25%。不是任何公司的实际数据或净利润预测。",
+  "earnings": {
+    "operatingVessels": 10,
+    "earningDays": 300,
+    "deltaTceUsdPerDay": 1000,
+    "cnyPerUsd": 7,
+    "spotExposure": 0.5,
+    "taxRate": 0.25
+  }
+}
