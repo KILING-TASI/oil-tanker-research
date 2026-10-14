@@ -139,8 +139,8 @@ tr.ok td:first-child{border-left-color:#16a34a}
 <div class="hd">
   <div class="hd-top">
     <div>
-      <h1>油运行状态仪表盘<span class="ver">v2 · 2026-10-14</span></h1>
-      <div class="meta">数据时点 <b>2026-10-14</b>（盘中／午间快照） · 财务 <b>2026 半年报</b> · 运价 <b>10-06 至 10-09</b>（<b style="color:#fca5a5">已滞后 5 个交易日</b>） · 由 20 节深研报经九轮纠错压缩</div>
+      <h1>油运行状态仪表盘<span class="ver">v3 · 2026-10-14</span></h1>
+      <div class="meta">数据时点 <b>2026-10-14</b>（盘中／午间快照） · 财务 <b>2026 半年报</b> · 运价 <b>10-06 至 10-09</b>（<b style="color:#fca5a5">已滞后 5 个交易日</b>） · PB 分位 <b>2026-10-13 收盘</b>（<b style="color:#86efac">已核实</b>） · 由 20 节深研报经十轮纠错压缩</div>
     </div>
     <div class="hd-badges">
       <span class="hbadge">景气 <b style="color:#fca5a5">极值区</b></span>
@@ -153,7 +153,7 @@ tr.ok td:first-child{border-left-color:#16a34a}
   <div class="hd-sum">
     <span><b>5</b>/5 项核心读数处于极值或过热区</span>
     <span><b>3</b> 项信号已被历史证伪</span>
-    <span>待核项 <b>4</b></span>
+    <span>待核项 <b>3</b></span>
     <span>一手／准一手数据源 <b>6</b> 类</span>
   </div>
 </div>
@@ -166,6 +166,7 @@ tr.ok td:first-child{border-left-color:#16a34a}
     <li><b>② 新增「标的映射」层。</b>v1 到行业层就停了，缺 VLCC 艘数、现货敞口、TCE 弹性，「景气真实」无法翻译成「谁赚多少」。</li>
     <li><b>③ 浮舱结论被推翻。</b>v1 写「补库潮是第二波的潜在催化剂」。按套利均衡算，<b>当前运价下它在数学上不可能发生</b>（见第 5 节）。</li>
     <li><b>④ 新增「保质期」层。</b>今天是 10-14，运价停在 10-08；而搜索证实 TD15／TD22 在数日内从 38／52 万跳到 63.8／76.3 万。<b>读数可能已失效。</b></li>
+    <li><b>⑤ v3：PB 分位冲突已核清。</b>挂了六轮的「91.7% vs 40.5%」——<b>91.7% 是对的，40.5% 证伪</b>。详见第 7 节。</li>
   </ul>
 </div>
 
@@ -198,11 +199,12 @@ tr.ok td:first-child{border-left-color:#16a34a}
     <div class="bar"><i class="bg-amber" style="width:13%"></i></div>
     <div class="note">FFA 定价（美元/天）<br>条＝相对现货（12.8%）</div>
   </div>
-  <div class="light l-r"><span class="tag">定价</span>
+  <div class="light l-r"><span class="tag alert">定价·已核</span>
     <div class="lab">估值位置 PB</div>
-    <div class="row"><span class="val red">2.2–2.9</span></div>
-    <div class="bar"><i class="bg-red" style="width:78%"></i></div>
-    <div class="note">2019 同期仅 <b>0.88</b><br><b style="color:#b91c1c">分位源冲突·待核</b></div>
+    <div class="row"><span class="val red">2.58</span><span class="unit">倍</span></div>
+    <div class="bar"><i class="bg-red" style="width:92%"></i></div>
+    <div class="val2">5 年分位 <span class="red">91.7%</span><br>10 年分位 <span class="red">95.8%</span></div>
+    <div class="note">中远海能，10-13 收盘<br>2019 同期仅 <b>0.88</b>｜已双源核实</div>
   </div>
   <div class="light l-r"><span class="tag">筹码</span>
     <div class="lab">筹码拥挤度</div>
@@ -239,7 +241,7 @@ tr.ok td:first-child{border-left-color:#16a34a}
 <tr class="hot"><td>① 供需</td><td class="tnum">订单簿占船队 23%；1–7 月全球新签 VLCC <b>162 艘，创 1973 年以来最高</b>；克拉克森：2027 需求 +10.2% &gt; 供给 +6.7%，<b>2028 供给 +9.7% &gt; 需求 +4.5%</b></td><td><span class="pill p-hot">紧→松</span></td><td class="tread"><b>2028 是官方预测的分水岭。</b>交付排期 2027 年 64 艘、2028 年 102 艘；CMB.TECH：2027–28 全球 VLCC＋苏伊士型<b>平均每两天交付一艘</b>。注意：<b>新签 162 艘 ≠ 订单簿 23%，是两个口径，勿混用</b><span class="cred c-a">克拉克森（经半年报引）</span></td></tr>
 <tr class="hot"><td>② 运价</td><td class="tnum">TD3C 141.3 万（<b>失真</b>）｜TD34 91.3／TD15 76.3／TD22 63.8 万｜综合 TCE 85.6 万｜Q3 均值 <b>27.8 万</b>｜H1 实现 10.6–11.3 万</td><td><span class="pill p-hot">极值</span></td><td class="tread"><b>Q3 均值 277,995 是最可靠的期间读数</b>（克拉克森官方）。<b>且中国船东不承接湾内高价</b>：中远海能明确不再进波斯湾装货，招商轮船称湾内超高运价由少数高风险偏好船东承接<span class="cred c-a">克拉克森／管理层</span></td></tr>
 <tr class="hot"><td>③ 盈利</td><td class="tnum">毛利率变化：招商轮船 <b>+18.51pct</b>、中远海能 +15.26pct、招商南油 <b>+0.98pct</b>；H1 归母净利 69.60 亿（+227.6%）／45.45 亿（+143%）／8.12 亿（+42.4%）</td><td><span class="pill p-hot">分化</span></td><td class="tread"><b>只有 VLCC 是真的。</b>Q3 官方：VLCC 277,995 vs MR 31,157，<b>差 8.9 倍</b>。南油是跟涨而非兑现。<b>传导滞后约 1 个季度</b>——中远海能管理层：9 月急升的运价<b>反映在 Q4 业绩中</b><span class="cred c-a">数据库／管理层</span></td></tr>
-<tr class="hot"><td>④ 定价</td><td class="tnum">PB：招商轮船 3.67｜中远海能 2.23–2.88｜南油 1.74；一年涨幅 +139%／+77%／+113%</td><td><span class="pill p-hot">高位</span></td><td class="tread"><b>PB 绝对水平是唯一可确认的风险变量</b>（2019 年同期仅 0.88）。但分位数据源冲突未解<span class="cred c-c">待核</span></td></tr>
+<tr class="hot"><td>④ 定价</td><td class="tnum">PB（10-13 收盘）：招商轮船 <b>3.67</b>｜中远海能 <b>2.58</b>｜南油 <b>1.74</b><br>5 年分位：98.8%／<b>91.7%</b>／55.6%；一年涨幅 +139%／+77%／+113%</td><td><span class="pill p-hot">高位</span></td><td class="tread"><b>PB 绝对水平是唯一可确认的风险变量</b>（2019 年同期仅 0.88）。<b>v3：分位已双源核实，冲突已解</b>（原报告 2.23–2.88 的区间实为不同日期取值，现统一为 10-13 收盘）<span class="cred c-a">已核实</span></td></tr>
 </table>
 </div>
 
@@ -260,7 +262,7 @@ tr.ok td:first-child{border-left-color:#16a34a}
 </div>
 
 <!-- ===== 五、仪表与阶梯 ===== -->
-<h2><span class="no">5</span>仪表、价格阶梯与浮舱门槛<span class="new">v2 新增第三图</span></h2>
+<h2><span class="no">5</span>仪表、阶梯与关键阈值<span class="new">v3 新增第四图</span></h2>
 <div class="charts2">
   <div class="cbox">
     <h3>景气度：当前运价在历史区间的位置</h3>
@@ -281,6 +283,16 @@ tr.ok td:first-child{border-left-color:#16a34a}
     <b>读数</b>：历史最深 contango 为 Brent 1M-13M <b>15.76 美元/桶</b>（2020-04-22，Wind，「历史高位」）、Brent 6 个月 <b>13.95 美元</b>（2020-03，史上最宽）。<b>当前 141.3 万/天需要 63.6 美元/桶的 3 个月价差——是历史峰值的 4 倍，数学上不可能。</b>
     倒推：浮舱套利能承受的日租上限约 <b>9–18 万美元/天</b>（视持有期 6–12 个月与价差口径）。<br>
     <b style="color:#b91c1c">结论修正</b>：v1 称「补库潮是第二波的潜在催化剂」——<b>不成立</b>。2020 年的因果顺序是<b>先有低运价＋深 contango，才有抢船推高运价</b>；现在运价已是浮舱可承受上限的 8–15 倍，<b>高运价亲手杀死了这个催化剂</b>。它的正确定位是：<b>运价回落过程中的缓冲垫，而非上行第二波。</b>
+  </div>
+</div>
+<div class="cbox" style="margin-top:16px">
+  <h3>估值分位随窗口的变化：窗口一换，结论可能翻转</h3>
+  <div id="chart_pbwin" class="chart" style="height:250px"></div>
+  <div class="cap">
+    <b>算法</b>：取百度日频市净率序列（2026-10-13 收盘），按「<b>序列中低于当前值的占比</b>」自算分位；与 NeoData 官方分位交叉验证，三只标的<b>差异均 ≤0.74pct</b>。<br>
+    <b>读数 1</b>：<b>中远海能、招商轮船在任何窗口下都在 80% 以上</b>——「估值高位」这个结论<b>不依赖窗口选择，稳健</b>。且窗口越长越极端（中远海能 5 年 91.7% → 10 年 95.8%）。<br>
+    <b>读数 2</b>：<b>招商南油完全相反</b>——3 年 75.2%（贵）vs 10 年 <b>37.9%</b>（便宜）。原因是它 10 年内 PB 曾高达 <b>6.84</b>（重组期净资产极小）。<b>对这类标的，分位结论完全由窗口决定，不可单用。</b><br>
+    <b>读数 3</b>：<b>中远海能 1 年分位（80.3%）低于 5 年（90.9%）</b>——因为过去一年整体就在高位。<b>在估值重估年，1 年窗口会系统性低估风险</b>，宜用 5 年及以上。
   </div>
 </div>
 
@@ -320,7 +332,7 @@ tr.ok td:first-child{border-left-color:#16a34a}
 <tr class="warn"><td>TCE 弹性 12.11 亿元/万美元</td><td><span class="cred c-b">国金证券</span></td><td class="tread">仅招商轮船一家有券商测算。<b>中远海能弹性系数缺失 → 两家定量对比目前不可能</b></td></tr>
 <tr class="warn"><td>浮舱门槛 9–18 万/天</td><td><span class="cred c-b">本盘推导</span></td><td class="tread">公式用 2020-04 反算校验通过（18.0 vs 实际 18.57）。<b>但历史最深 contango、船容量 200 万桶均取媒体转引，未见 Wind/EIA 一手</b></td></tr>
 <tr class="warn"><td>1 年期租 18.5–26.9 万</td><td><span class="cred c-b">转引</span></td><td class="tread">两源差异达 45%。<b>期限结构（1年 18.5–26.9 万 → 3年 8.75–11 万 → 5年 8.6 万）比单点值更可信</b></td></tr>
-<tr class="hot"><td><b>PB 分位</b></td><td><span class="cred c-c">待核</span></td><td class="tread"><b>报告 91.7% vs 第三方 40.5%，差 50pct 以上。</b>它是修正后风险结论的唯一支柱，<b>核清前不应作为定论</b></td></tr>
+<tr class="ok"><td><b>PB 分位（v3 已核清）</b></td><td><span class="cred c-a">已核实</span></td><td class="tread"><b>结论：91.7% 成立，40.5% 证伪。</b>核验方法：取<b>百度日频市净率原始序列</b>自行计算分位，与 NeoData 官方分位交叉验证——<b>中远海能 90.91% vs 91.65%（差 0.74pct）、招商轮船 98.80% vs 98.84%、招商南油 55.64% vs 55.40%，三只全部吻合</b>；月末子样本复算 90.16%，采样间隔均匀（每 2 日），结论稳健。<br><b>40.5% 为何错</b>：在 1／3／5／10 年<b>任一窗口</b>下，中远海能 PB=2.23 对应分位分别是 <b>53.4%／78.8%／77.8%／89.5%</b>，无一接近 40.5%；5 年窗口的 40.5% 分位对应 PB 仅 <b>1.744</b>。<b>唯一未决</b>：未能抓取 eniu 原页面（抓取为空），故只能否证该数值，无法定位其成因；注意到<b>招商南油 10 年分位 37.9%</b> 与之接近，疑为标的或窗口误置</td></tr>
 <tr class="ok"><td>南向持股金额</td><td><span class="cred c-a">已修正</span></td><td class="tread">原写 −431.6 亿港元（夸大 7–10 倍），修正为 <b>约 −46 亿港元</b></td></tr>
 </table>
 </div>
@@ -369,13 +381,13 @@ tr.ok td:first-child{border-left-color:#16a34a}
     <li><b>谁在真赚钱？</b>→ 看第 4 节：VLCC 艘数 × 现货敞口决定弹性，招商轮船有券商弹性系数（12.11 亿/万美元）。</li>
     <li><b>回撤幅度会有多大？</b>→ 历史两次：运价 −98%、股价见顶后 −50%。</li>
   </ul>
-  <div class="tip"><b>📌 更新此盘时必做四件事：</b>① 每个数字<b>必须带时点</b>（本轮运价数日内可变 +68%，日频数据过期即废）；② 新增数字<b>要与初轮同等审查</b>，勿因"刚好能修正已知错误"而放宽——<b>第 5 节的浮舱算术就是第 9 轮新引入的，虽然用 2020 年反算校验过，仍属"推导"而非"已证实"</b>；③ 引用前先与「对照基准」列比对，偏离超 50% 需给出解释；④ <b>先查第 6 节保质期表，再决定能否引用</b>。</div>
+  <div class="tip"><b>📌 更新此盘时必做五件事：</b>① 每个数字<b>必须带时点</b>（本轮运价数日内可变 +68%，日频数据过期即废）；② 新增数字<b>要与初轮同等审查</b>，勿因"刚好能修正已知错误"而放宽——<b>第 5 节的浮舱算术就是第 9 轮新引入的，虽然用 2020 年反算校验过，仍属"推导"而非"已证实"</b>；③ 引用前先与「对照基准」列比对，偏离超 50% 需给出解释；④ <b>先查第 6 节保质期表，再决定能否引用</b>；⑤ <b>引用任何「分位」必须同时写明窗口</b>（本盘已证明：招商南油 3 年 75.2% vs 10 年 37.9%，结论因窗口而异；中远海能 1 年 80.3% 会低估重估年的风险）。</div>
 </div>
 
 <div class="foot">
 <b>数据来源：</b>招商轮船 2026 半年度报告（上交所原文，一手）、中远海能 2026 中期业绩会（管理层口径）、克拉克森（经 Seatrade Maritime／Ship Universe／招商轮船半年报转引）、波罗的海交易所（经界面新闻／金融界／搜船网／智通财经转引，10-06 至 10-09）、Kpler、Wind（经东方财富转引）、Progressive Capital Partners 2020-04 报告、国金证券、光大证券、上海航运交易所、数据库行情与财务接口。<br>
-<b>方法与局限：</b>由 20 节深度研报经九轮纠错压缩而成。<span class="warn">九轮中每一个「一句话结论」都在下一轮被推翻过——「13.5 万共识中枢」「7.8 倍 gap 即全部风险」「补库潮是第二波催化剂」均不例外；v2 自身新增的四项修正（TD3C 失真、标的映射、浮舱锁死、保质期）同样可能在第十轮被推翻，其中「浮舱门槛 9–18 万/天」为本盘推导、校验仅通过 2020 年单点反算。本盘的价值在于数据的组织、交叉检验与可信度标注过程，不在于任何单句结论；请对所有单句结论保持折扣。</span><br>
-生成时间：2026-10-14 · v2
+<b>方法与局限：</b>由 20 节深度研报经十轮纠错压缩而成。<span class="warn">十轮中每一个「一句话结论」都在下一轮被推翻过——「13.5 万共识中枢」「7.8 倍 gap 即全部风险」「补库潮是第二波催化剂」均不例外；v2 自身新增的四项修正（TD3C 失真、标的映射、浮舱锁死、保质期）同样可能在第十轮被推翻，其中「浮舱门槛 9–18 万/天」为本盘推导、校验仅通过 2020 年单点反算。本盘的价值在于数据的组织、交叉检验与可信度标注过程，不在于任何单句结论；请对所有单句结论保持折扣。</span><br>
+生成时间：2026-10-14 · v3
 </div>
 
 </div>
@@ -414,6 +426,32 @@ echarts.init(document.getElementById('chart_ladder')).setOption({
     data:vals.map(function(v,i){return {value:v,itemStyle:{color:cols[i],borderRadius:[0,5,5,0]}}}),
     label:{show:true,position:'right',fontSize:10,fontWeight:600,color:gText,formatter:'{c} 万'}
   }]
+});
+
+/* 估值分位随窗口变化 */
+var pbNames=['中远海能 PB 2.58','招商轮船 PB 3.67','招商南油 PB 1.74'];
+var pbSeries=[
+  {name:'近 1 年',type:'bar',data:[80.3,94.2,64.4],itemStyle:{color:'#93c5fd'}},
+  {name:'近 3 年',type:'bar',data:[93.4,98.1,75.2],itemStyle:{color:'#60a5fa'}},
+  {name:'近 5 年',type:'bar',data:[90.9,98.8,55.6],itemStyle:{color:'#2563eb'}},
+  {name:'近 10 年',type:'bar',data:[95.8,99.3,37.9],itemStyle:{color:'#1e3a8a'}}
+];
+echarts.init(document.getElementById('chart_pbwin')).setOption({
+  legend:{data:['近 1 年','近 3 年','近 5 年','近 10 年'],top:2,itemWidth:12,itemHeight:8,textStyle:{fontSize:10.5,color:gText}},
+  grid:{left:52,right:26,top:38,bottom:26},
+  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},formatter:function(p){var s=p[0].name;p.forEach(function(x){s+='<br>'+x.marker+x.seriesName+'：'+x.value+'%'});return s}},
+  xAxis:{type:'category',data:pbNames,axisLabel:{fontSize:10.5,color:gText},axisLine:{lineStyle:{color:'#cbd5e1'}},axisTick:{show:false}},
+  yAxis:{type:'value',max:100,name:'分位 %',nameTextStyle:{fontSize:10,color:gSub},axisLabel:{fontSize:10,color:gSub},splitLine:{lineStyle:{color:gLine}}},
+  series:pbSeries.map(function(s){
+    s.barWidth='16%';
+    s.label={show:true,position:'top',fontSize:8.5,color:gSub,formatter:'{c}'};
+    s.itemStyle.borderRadius=[3,3,0,0];
+    return s;
+  }).concat([{
+    name:'',type:'line',data:[],silent:true,
+    markLine:{symbol:'none',silent:true,data:[{yAxis:50,lineStyle:{color:'#dc2626',width:1.5,type:'dashed'},
+      label:{show:true,position:'insideEndTop',formatter:'50% 中位线',fontSize:9,color:'#b91c1c',fontWeight:700}}]}
+  }])
 });
 
 /* 浮舱套利门槛：各运价水平所需的 3 个月 contango（美元/桶） */
