@@ -25,6 +25,7 @@ FFA 报价反映合约定价，不保证未来现货或股价；不能因一个�
 
 ## 独立核对与交付
 
+- 复核期间、来源链、FFA误差、敞口或历史PB序列时，读取 [证据攻击检查](references/evidence-contracts.md)，运行 `scripts/evidence_checks.py`。阻断项保留为缺口；计算成功不认证来源、历史可得性或公司实际收益。不得使用单日验证月均、半年对全年、利润权重乘船数权重或把转载当独立证据。
 - 需要算术核对时，读取 [方法与输入](references/calculation-contracts.md)，运行 `scripts/research_checks.py`。它只计算声明参数，不认证来源。
 - 查数据字段时读取 [数据字典](references/data-dictionary.md)，取数前读取 [来源与权限](references/data-sources.md)。历史数值及工具名称不是当前事实或接口承诺。
 - 复查旧观点时读取 [踩坑记录](references/pitfalls.md)。旧记录中的“已核清”或规律性语言需按本次证据重新判断。

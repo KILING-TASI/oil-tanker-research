@@ -1,0 +1,96 @@
+# SPDX-License-Identifier: MIT
+"""Schema and comparison guards. Declared metadata is not source authentication."""
+from datetime import date
+import argparse
+import json
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from research_checks import number
+
+def period(p):
+    start=date.fromisoformat(p['start']);end=date.fromisoformat(p['end'])
+    if start>end:raise ValueError('期间起止颠倒')
+    return start,end
+
+def margin_compare(p):
+    current=p['current'];prior=p['prior'];cs,ce=period(current);ps,pe=period(prior)
+    if any(not isinstance(row.get(k),str) or not row[k].strip() for row in (current,prior) for k in ('scope','unit')):raise ValueError('毛利率范围与单位不能为空')
+    if current['scope']!=prior['scope'] or current['unit']!=prior['unit']:return {'status':'blocked','reason':'范围/单位不一致'}
+    if (cs.month,cs.day,ce.month,ce.day)!=(ps.month,ps.day,pe.month,pe.day) or cs.year!=ps.year+1 or ce.year!=pe.year+1:return {'status':'blocked','reason':'不是同一年度窗口的同比；半年不能对全年'}
+    if prior.get('restatementStatus') not in ('restated','not-required'):return {'status':'blocked','reason':'上期重述状态未知'}
+    rev=number(current['revenue'],'revenue',.000001);cost=number(current['cost'],'cost',0);prev=number(prior['revenue'],'prior revenue',.000001);pcost=number(prior['cost'],'prior cost',0)
+    cur=(rev-cost)/rev;old=(prev-pcost)/prev
+    return {'status':'conditional-comparison','currentMargin':cur,'priorMargin':old,'changePctPoints':(cur-old)*100,'limits':'简单毛利率，不含其他税费；不识别收益因果或公司净利润'}
+
+def freight_error(p):
+    forecast=p['forecast'];realized=p['realized'];fs,fe=period(forecast);rs,re=period(realized);asof=date.fromisoformat(p['asOf']);quote=date.fromisoformat(forecast['quoteDate'])
+    if quote>=fs or quote>asof or re>asof:return {'status':'blocked','reason':'报价非提前冻结或结算期尚未结束'}
+    keys=['route','vesselBasis','unit','aggregation','benchmark']
+    if (fs,fe)!=(rs,re) or any(not forecast.get(k) or forecast.get(k)!=realized.get(k) for k in keys):return {'status':'blocked','reason':'航线/标准船/单位/指数/结算窗口/聚合方式不匹配'}
+    if forecast['aggregation']!='settlement-period-mean':return {'status':'blocked','reason':'需匹配结算期均值，不能用单日价验证月合约'}
+    actual=number(realized['value'],'realized',.000001);pred=number(forecast['value'],'forecast',0)
+    return {'status':'one-declared-observation','signedRelativeError':(pred-actual)/actual,'absoluteRelativeError':abs(pred-actual)/actual,'limits':'一个声明样本不证明稳定预测能力，不认证输入，不映射股价'}
+
+def source_roots(records):
+    if not isinstance(records,list) or len(records)>10000:raise ValueError('sources必须为不超过10000项列表')
+    lookup={}
+    for row in records:
+        id=row['id']
+        if not isinstance(id,str) or not id or id in lookup:raise ValueError('来源id重复/空值')
+        lookup[id]=row
+    roots=set();unknown=[]
+    for id in lookup:
+        current=id;seen=set();root=None
+        while current in lookup:
+            if current in seen:raise ValueError('来源链存在循环')
+            seen.add(current);row=lookup[current]
+            if row.get('parent'):current=row['parent'];continue
+            root=row.get('originalPublisher');break
+        if root:roots.add(root)
+        else:unknown.append(id)
+    return {'declaredPublisherRoots':sorted(roots),'knownRootCount':len(roots),'unknownOriginIds':unknown,'limits':'声明源头去重，不认证原始数据独立性或发布者真实性'}
+
+def exposure_bridge(p):
+    a=p['profitWeight'];b=p['spotWeight']
+    required=['population','period','measure']
+    if any(not a.get(k) or a.get(k)!=b.get(k) for k in required):return {'status':'blocked','reason':'利润、船数或船日权重的总体/期间/度量不同，不可相乘认证敞口'}
+    return {'status':'declared-aligned-product','value':number(a['value'],'profitWeight',0,1)*number(b['value'],'spotWeight',0,1),'limits':'声明总体匹配的机械乘积，不认证公司利润现货敞口'}
+
+def review(p):
+    if not isinstance(p,dict):raise ValueError('输入必须为对象')
+    results={}
+    for key,fn in [('margin',margin_compare),('freight',freight_error),('sources',source_roots),('exposure',exposure_bridge),('valuation',valuation_series)]:
+        if key in p:results[key]=fn(p[key])
+    if not results:raise ValueError('至少提供一项核对')
+    return {'status':'comparison-guards','sourceVerified':False,'results':results}
+
+def valuation_series(p):
+    """Dated vendor observations; never label a sampled window daily or point-in-time."""
+    for key in ('source','netAssetBasis','samplingBasis'):
+        if not isinstance(p.get(key),str) or not p[key].strip():raise ValueError('估值序列缺少'+key)
+    asof=date.fromisoformat(p['asOf']);retrieved=date.fromisoformat(p['retrievedAt']);start,end=period(p)
+    if end>asof or start>asof:raise ValueError('估值窗口晚于研究时点')
+    rows=p['observations']
+    if not isinstance(rows,list) or not rows or len(rows)>100000:raise ValueError('估值观察值数量无效')
+    seen=set();values=[];dates=[]
+    for row in rows:
+        day=date.fromisoformat(row['date'])
+        if day in seen:raise ValueError('估值日期重复')
+        seen.add(day)
+        if day>end or day<start:raise ValueError('估值观察值不在声明窗口')
+        dates.append(day);values.append(number(row['value'],'PB',0))
+    current=number(p['current'],'current PB',0);target=date.fromisoformat(p['currentDate'])
+    if target!=asof or target!=end or target not in dates:raise ValueError('估值当前值日期缺失或与研究时点不一致')
+    if values[dates.index(target)]!=current:raise ValueError('当前PB与序列末日不一致')
+    dates.sort();gaps=[(b-a).days for a,b in zip(dates,dates[1:])]
+    if p['samplingBasis']=='calendar-daily' and (any(g!=1 for g in gaps) or dates[0]!=start):raise ValueError('不能将稀疏或缺段序列声明为自然日日频')
+    return {'status':'declared-vendor-recomputation','count':len(values),'firstDate':dates[0].isoformat(),'lastDate':dates[-1].isoformat(),'gapDays':sorted(set(gaps)),'strictLessPercentile':sum(v<current for v in values)/len(values),'ties':sum(v==current for v in values),'pointInTimeCertified':False,'retrievedAfterAsOf':retrieved>asof,'limits':'只复算声明样本；不认证历史可得性、净资产口径或估值风险。窗口名称不能替代实际日期和采样。'}
+
+def main():
+    ap=argparse.ArgumentParser(description='口径和来源链反例核对，不认证证据');ap.add_argument('--input',required=True);args=ap.parse_args()
+    try:
+        def reject(s):raise ValueError('禁止非有限JSON常量')
+        data=json.loads(Path(args.input).read_text(encoding='utf-8-sig'),parse_constant=reject);result=review(data);print(json.dumps(result,ensure_ascii=False,indent=2,allow_nan=False));return 0
+    except (ValueError,TypeError,KeyError,OSError,OverflowError,AttributeError) as e:print('核对失败：'+str(e));return 1
+if __name__=='__main__':raise SystemExit(main())

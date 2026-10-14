@@ -1,0 +1,15 @@
+{
+  "valuation": {
+    "source": "原创合成示例",
+    "netAssetBasis": "声明假设，非真实股票",
+    "samplingBasis": "vendor-sampled",
+    "asOf": "2026-10-13",
+    "retrievedAt": "2026-10-14",
+    "start": "2026-10-11",
+    "end": "2026-10-13",
+    "currentDate": "2026-10-13",
+    "current": 2,
+    "observations": [{"date":"2026-10-11","value":1},{"date":"2026-10-13","value":2}]
+  },
+  "sources": [{"id":"a","originalPublisher":"示例发布者"},{"id":"b","parent":"a"}]
+}

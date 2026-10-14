@@ -19,6 +19,8 @@ jobs:
           node-version: '22'
       - run: python -X utf8 -m unittest discover -s tests -v
       - run: python -I -S -X utf8 skill/scripts/research_checks.py --input examples/teaching.json
+      - run: python -I -S -X utf8 skill/scripts/evidence_checks.py --input examples/evidence-teaching.json
+      - run: python -X utf8 skill/scripts/check_report.py evidence-review.html
       - run: python -X utf8 skill/scripts/check_report.py index.html
       - run: python -X utf8 skill/scripts/check_report.py skill/assets/dashboard-template.html
       - run: python -X utf8 skill/scripts/check_report.py skill/assets/report-template.html
