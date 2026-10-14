@@ -60,7 +60,7 @@ class Contract(unittest.TestCase):
         import tempfile,subprocess,sys
         with tempfile.TemporaryDirectory() as tmp:
             target=Path(tmp)/'result.json';target.write_text('frozen',encoding='utf-8')
-            r=subprocess.run([sys.executable,'-X','utf8',str(ROOT/'skill/scripts/research_checks.py'),'--input',str(ROOT/'examples/teaching.json'),'--output',str(target)],capture_output=True)
+            r=subprocess.run([sys.executable,'-X','utf8',str(ROOT/'skill/scripts/research_checks.py'),'--input',str(ROOT/'skill/examples/teaching.json'),'--output',str(target)],capture_output=True)
             self.assertEqual(r.returncode,1);self.assertEqual(target.read_text(),'frozen')
     def test_unclosed_tags(self):self.assertEqual(html.inspect('<div><p>x</p>')['status'],'failed')
     def test_script_attribute_quotes(self):self.assertEqual(html.inspect('<script type="application/ld+json">{"x":1}</script>')['status'],'passed-static-checks')

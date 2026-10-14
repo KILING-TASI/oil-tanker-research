@@ -42,7 +42,6 @@ description: 研究原油及成品油海运景气、航线运价和油运公司�
 - 比较期间、FFA、敞口、PB、公司身份或反推运价时，读 [证据核对契约](references/evidence-contracts.md)，使用 `scripts/evidence_checks.py`。`blocked`保留为阻断，成功退出不等于研究通过。
 - 浮舱成本、船队集合重叠、TCE增量或经验分位算术，读 [计算契约](references/calculation-contracts.md)，使用 `scripts/research_checks.py`。只计算声明参数，不联网认证输入。
 - 不能用总利润除边际敏感性反推运价；需同范围基准利润、基准TCE、期间、税费、归属及局部适用区间。公司推介未披露的期间/税费保留未知。现金保本与会计保本分别解释，TCE已扣的航次成本不要重复扣减。
-- 复查历史方法错误时按需读 [踩坑记录](references/pitfalls.md)，其中旧数值和“已核清”表述仍需重新取证。
 
 脚本只需Python 3.10+标准库。使用相对路径，以本Skill目录为根；另一仓库、作者缓存和历史数据文件不是运行依赖。
 

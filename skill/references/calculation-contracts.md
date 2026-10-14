@@ -26,7 +26,7 @@
 
 ## 输入与输出
 
-见 仓库examples/teaching.json（单独Skill可按下列字段准备自己的JSON）。顶层需 `asOf`（YYYY-MM-DD）和非空 `basis`；计算模块可任选。数值必须有限，比例0至1；缺字段不补零。输出文件拒绝覆盖。`sourceVerified=false` 始终保留，程序没有联网或来源认证功能。
+见本Skill内的examples/teaching.json；可按下列字段准备自己的JSON。顶层需 `asOf`（YYYY-MM-DD）和非空 `basis`；计算模块可任选。数值必须有限，比例0至1；缺字段不补零。输出文件拒绝覆盖。`sourceVerified=false` 始终保留，程序没有联网或来源认证功能。
 
 ## 官方方法参考
 

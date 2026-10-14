@@ -37,18 +37,3 @@ class ProfitInverse(unittest.TestCase):
         p=self.example();p['baselineProfit']=0;p['target']['value']=20;self.assertEqual(profit_inverse(p)['impliedTce'],110)
     def test_registered_offline_interface(self):
         self.assertEqual(review({'profitInverse':self.example()})['results']['profitInverse']['status'],'conditional-local-scenario')
-    def test_report_conclusions_withdrawn_not_certified(self):
-        root=Path(__file__).resolve().parents[1];rows={c['id']:c for c in json.loads((root/'evidence/claims-20261014.json').read_text(encoding='utf-8'))['claims']}
-        for cid in ['d-0311','d-0405','d-0422','d-0424','d-0595']:
-            self.assertEqual(rows[cid]['status'],'withdrawn-inference');self.assertFalse(rows[cid]['activeUse']);self.assertTrue(rows[cid]['missingEvidence'])
-    def test_delivery_missing_original_remains_unverified(self):
-        root=Path(__file__).resolve().parents[1];rows={c['id']:c for c in json.loads((root/'evidence/claims-20261014.json').read_text(encoding='utf-8'))['claims']}
-        for n in range(69,74):
-            row=rows[f'd-chart-{n:04}'];self.assertEqual(row['status'],'unverified');self.assertEqual(row['sourcePages'],{'cosco-presentation-h1-2026':[13]});self.assertFalse(row['activeUse'])
-    def test_annual_margin_uses_operating_cost_not_total_cost(self):
-        root=Path(__file__).resolve().parents[1];a=json.loads((root/'evidence/round4-20261014.json').read_text(encoding='utf-8'))['cmesAnnual']
-        self.assertAlmostEqual(a['marginPct'],(a['revenueCny']-a['costCny'])/a['revenueCny']*100);self.assertEqual(round(a['marginPct'],2),26.47)
-    def test_pb_chart_subject_and_rounding(self):
-        root=Path(__file__).resolve().parents[1];rows={c['id']:c for c in json.loads((root/'evidence/claims-20261014.json').read_text(encoding='utf-8'))['claims']};series={s['sourceId']:s for s in json.loads((root/'evidence/pb-recompute-20261014.json').read_text(encoding='utf-8'))['series']}
-        for n in range(108,120):
-            c=rows[f's-chart-{n:04}'];s=series[c['sources'][0]];self.assertIn('近 '+str([1,3,5,10][(n-108)//3])+' 年',c['context']);self.assertIn({'600026':'中远海能','601872':'招商轮船','601975':'招商南油'}[s['symbol']],c['context']);self.assertEqual(float(c['original']),round(s['percentileStrictLess']*100,1));self.assertEqual(c['status'],'recomputed-vendor');self.assertFalse(c['activeUse'])
