@@ -38,7 +38,7 @@ summary { cursor: pointer; color: #2563eb; font-size: 13px; }
 .disc { margin-top: 40px; font-size: 12px; color: #6b7280; border-top: 1px solid #e5e7eb; padding-top: 14px; }
 </style>
 </head>
-<body>
+<body><aside style="padding:16px;background:#fff4dc;color:#603d00;border:2px solid #d69724;margin:16px"><strong>历史案例 · 本轮未全量复核原始证据</strong><p>保留2026-10-14旧论证与数值；其中已核清、唯一风险、稳定预测和套利不可能等断言，不能视为本轮认证。请先阅读 <a href="README.md">当前使用边界</a>，核对来源、单位和期限后再引用。本轮方法修正：亿元弹性反推船数需补单位换算；浮舱需同期限并计资金及其他成本；单案例误差和PB水平不能外推稳定规律。图表依赖外部CDN；无网络时正文仍可读。</p></aside>
 <div class="wrap">
 
 <h1>油运行业数据拆解</h1>
@@ -764,6 +764,8 @@ summary { cursor: pointer; color: #2563eb; font-size: 13px; }
 </div>
 
 <script>
+if (typeof echarts === "undefined") { document.querySelectorAll("[id^=chart_]").forEach(function(el) { el.textContent="图表组件未加载：请核对网络；正文仍可阅读。"; }); } else {
+
 var optTce = {
   tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
   grid: { left: 150, right: 60, top: 20, bottom: 40 },
@@ -967,6 +969,8 @@ var optSeg = {
   }]
 };
 echarts.init(document.getElementById('chart_seg')).setOption(optSeg);
+
+}
 </script>
 
 <h2>十七、AI 幻觉与错误自查清单（第五轮）</h2>

@@ -132,7 +132,7 @@ tr.ok td:first-child{border-left-color:#16a34a}
 @media(max-width:640px){.lights{grid-template-columns:repeat(2,1fr)}.hd{padding:20px}.hd h1{font-size:20px}}
 </style>
 </head>
-<body>
+<body><aside style="padding:16px;background:#fff4dc;color:#603d00;border:2px solid #d69724;margin:16px"><strong>历史案例 · 本轮未全量复核原始证据</strong><p>保留2026-10-14旧论证与数值；其中已核清、唯一风险、稳定预测和套利不可能等断言，不能视为本轮认证。请先阅读 <a href="README.md">当前使用边界</a>，核对来源、单位和期限后再引用。本轮方法修正：亿元弹性反推船数需补单位换算；浮舱需同期限并计资金及其他成本；单案例误差和PB水平不能外推稳定规律。图表依赖外部CDN；无网络时正文仍可读。</p></aside>
 <div class="wrap">
 
 <!-- ===== Header ===== -->
@@ -425,6 +425,8 @@ tr.ok td:first-child{border-left-color:#16a34a}
 
 </div>
 <script>
+if (typeof echarts === "undefined") { document.querySelectorAll("[id^=chart_]").forEach(function(el) { el.textContent="图表组件未加载：请核对网络；正文仍可阅读。"; }); } else {
+
 var gText='#334155', gSub='#64748b', gLine='#eef2f7';
 
 /* 景气度仪表 —— 半环，指针触顶 */
@@ -509,6 +511,8 @@ echarts.init(document.getElementById('chart_storage')).setOption({
     }
   }]
 });
+
+}
 </script>
 </body>
 </html>
