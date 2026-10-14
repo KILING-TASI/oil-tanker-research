@@ -7,13 +7,13 @@
     "secondary-only": 22,
     "withdrawn-inference": 22,
     "partial-benchmark": 4,
-    "supported-disclosure": 48,
+    "supported-disclosure": 52,
     "recomputed": 3,
     "needs-definition": 15,
     "recomputed-vendor": 3,
     "partial-disclosure": 8,
-    "contradicted": 9,
     "supported-presentation": 16,
+    "contradicted": 5,
     "period-conflict": 11,
     "partial-vendor": 4,
     "arithmetic-error": 3
@@ -4626,20 +4626,20 @@
       "tag": "td",
       "context": "中远海能 600026 | 2026 中期预案",
       "original": "10 派 2.8 元",
-      "status": "contradicted",
-      "ruling": "旧列在招商轮船名下10派2.8错位。招商轮船2026H1方案每10股1.30元。",
+      "status": "supported-disclosure",
+      "ruling": "原表行明确为中远海能600026，2026H1每股0.28元=每10股2.8元，与半年报方案一致。先前按行序将其配到轮船的误报已撤回；方案不等于到账。",
       "sources": [
-        "cmes-h1-2026"
+        "cosco-h1-2026"
       ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "auditMode": "round2 exact source-page review; compound unsupported portions retained",
       "sourcePages": {
-        "cmes-h1-2026": [
-          36
+        "cosco-h1-2026": [
+          2
         ]
       }
     },
@@ -4652,19 +4652,19 @@
       "tag": "td",
       "context": "中远海能 600026 | 2026 年内已实施",
       "original": "10 派 3.8 元（7-17 除权）",
-      "status": "contradicted",
-      "ruling": "旧列在招商轮船名下10派3.8/7-17错位；招商轮船2025末期每股0.25元，登记7-9、除息及发放7-10。",
+      "status": "supported-disclosure",
+      "ruling": "原表行明确为中远海能600026，每股0.38元=每10股3.8元，除息及发放2026-07-17，与A股实施公告一致。此前公司错位误报撤回。",
       "sources": [
-        "cmes-dividend-2025"
+        "cosco-dividend-2025"
       ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "auditMode": "round2 exact source-page review; compound unsupported portions retained",
       "sourcePages": {
-        "cmes-dividend-2025": [
+        "cosco-dividend-2025": [
           1,
           2
         ]
@@ -4717,20 +4717,20 @@
       "tag": "td",
       "context": "招商轮船 601872 | 2026 中期预案",
       "original": "10 派 1.3 元",
-      "status": "contradicted",
-      "ruling": "旧列在中远海能名下10派1.3错位；中远海能2026H1方案每股0.28元，即10派2.8。方案不等于已到账。",
+      "status": "supported-disclosure",
+      "ruling": "原表行明确为招商轮船601872，2026H1每股0.13元=每10股1.3元，与半年报方案一致。先前配到海能的误报撤回；方案不等于到账。",
       "sources": [
-        "cosco-h1-2026"
+        "cmes-h1-2026"
       ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "auditMode": "round2 exact source-page review; compound unsupported portions retained",
       "sourcePages": {
-        "cosco-h1-2026": [
-          2
+        "cmes-h1-2026": [
+          36
         ]
       }
     },
@@ -4743,19 +4743,19 @@
       "tag": "td",
       "context": "招商轮船 601872 | 2026 年内已实施",
       "original": "10 派 2.5 元（7-10 除权）",
-      "status": "contradicted",
-      "ruling": "旧列在中远海能名下10派2.5/7-10错位；中远海能2025年度每股0.38元，登记7-16、除息及发放7-17。此处为A股实施公告。",
+      "status": "supported-disclosure",
+      "ruling": "原表行明确为招商轮船601872，每股0.25元=每10股2.5元，除息及发放2026-07-10，与末期实施公告一致。此前公司错位误报撤回。",
       "sources": [
-        "cosco-dividend-2025"
+        "cmes-dividend-2025"
       ],
       "sourceClaimed": "来源：金融数据库一致预期接口（2026-10-14）。2026E 覆盖机构数：招商轮船 24 家、中远海能 24 家、南油 18 家。",
       "searchFamily": "supply-demand",
-      "activeUse": false,
+      "activeUse": true,
       "reviewedAt": "2026-10-14",
       "missingEvidence": "具体数字的同范围、同期间原始发布或计算底稿未完整取得；原文支持的独立数值见明确判定条目。",
       "auditMode": "round2 exact source-page review; compound unsupported portions retained",
       "sourcePages": {
-        "cosco-dividend-2025": [
+        "cmes-dividend-2025": [
           1,
           2
         ]

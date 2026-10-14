@@ -1,4 +1,4 @@
-import unittest,json,sys,copy
+import unittest,json,sys,copy,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'skill/scripts'))
@@ -30,5 +30,20 @@ class SecondRound(unittest.TestCase):
     def test_exact_period_conflict_mapping(self):
         x=json.loads((ROOT/'evidence/claims-20261014.json').read_text(encoding='utf-8'));c={r['id']:r for r in x['claims']}
         for i in range(385,396):self.assertEqual(c['d-'+str(i).zfill(4)]['status'],'period-conflict');self.assertIn('njtc-fy2025',c['d-'+str(i).zfill(4)]['sources'])
-        for id in ['d-0228','d-0229','d-0232','d-0233']:self.assertEqual(c[id]['status'],'contradicted')
+        for id in ['d-0228','d-0229','d-0232','d-0233']:self.assertEqual(c[id]['status'],'supported-disclosure')
+    def test_dividend_subject_from_original_html_row(self):
+        page=(ROOT/'油运行业数据拆解-20261014.html').read_text(encoding='utf-8');rows=re.findall(r'<tr\b[^>]*>[\s\S]*?</tr>',page)
+        claims={c['id']:c for c in json.loads((ROOT/'evidence/claims-20261014.json').read_text(encoding='utf-8'))['claims']};sources={s['id']:s for s in json.loads((ROOT/'evidence/sources-20261014.json').read_text(encoding='utf-8'))['sources']}
+        for id in ['d-0228','d-0229','d-0232','d-0233']:
+            row=next(row for row in rows if 'evidence-review.html#'+id+'"' in row);symbols=set(re.findall(r'\b(?:601872|600026|601975)\b',row));self.assertEqual(len(symbols),1);symbol=symbols.pop()
+            self.assertEqual(claims[id]['status'],'supported-disclosure')
+            for sid in claims[id]['sources']:self.assertTrue(sources[sid]['publisherRoot'].endswith(symbol),(id,sid,symbol))
+    def test_supported_claim_subjects_match_context(self):
+        claims=json.loads((ROOT/'evidence/claims-20261014.json').read_text(encoding='utf-8'))['claims'];sources={s['id']:s for s in json.loads((ROOT/'evidence/sources-20261014.json').read_text(encoding='utf-8'))['sources']}
+        for c in claims:
+            if not c['activeUse']:continue
+            symbols=set(re.findall(r'\b(?:601872|600026|601975)\b',c.get('context','')))
+            if len(symbols)==1:
+                symbol=symbols.pop()
+                for sid in c['sources']:self.assertTrue(sources[sid]['publisherRoot'].endswith(symbol),(c['id'],sid,symbol))
 if __name__=='__main__':unittest.main()

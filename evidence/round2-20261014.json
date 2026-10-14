@@ -312,37 +312,8 @@
     {
       "id": "d-0228",
       "previousStatus": "unverified",
-      "status": "contradicted",
-      "ruling": "旧列在招商轮船名下10派2.8错位。招商轮船2026H1方案每10股1.30元。",
-      "sources": [
-        "cmes-h1-2026"
-      ],
-      "sourcePages": {
-        "cmes-h1-2026": [
-          36
-        ]
-      }
-    },
-    {
-      "id": "d-0229",
-      "previousStatus": "unverified",
-      "status": "contradicted",
-      "ruling": "旧列在招商轮船名下10派3.8/7-17错位；招商轮船2025末期每股0.25元，登记7-9、除息及发放7-10。",
-      "sources": [
-        "cmes-dividend-2025"
-      ],
-      "sourcePages": {
-        "cmes-dividend-2025": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "id": "d-0232",
-      "previousStatus": "unverified",
-      "status": "contradicted",
-      "ruling": "旧列在中远海能名下10派1.3错位；中远海能2026H1方案每股0.28元，即10派2.8。方案不等于已到账。",
+      "status": "supported-disclosure",
+      "ruling": "原表行明确为中远海能600026，2026H1每股0.28元=每10股2.8元，与半年报方案一致。先前按行序将其配到轮船的误报已撤回；方案不等于到账。",
       "sources": [
         "cosco-h1-2026"
       ],
@@ -353,15 +324,44 @@
       }
     },
     {
-      "id": "d-0233",
+      "id": "d-0229",
       "previousStatus": "unverified",
-      "status": "contradicted",
-      "ruling": "旧列在中远海能名下10派2.5/7-10错位；中远海能2025年度每股0.38元，登记7-16、除息及发放7-17。此处为A股实施公告。",
+      "status": "supported-disclosure",
+      "ruling": "原表行明确为中远海能600026，每股0.38元=每10股3.8元，除息及发放2026-07-17，与A股实施公告一致。此前公司错位误报撤回。",
       "sources": [
         "cosco-dividend-2025"
       ],
       "sourcePages": {
         "cosco-dividend-2025": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "d-0232",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "原表行明确为招商轮船601872，2026H1每股0.13元=每10股1.3元，与半年报方案一致。先前配到海能的误报撤回；方案不等于到账。",
+      "sources": [
+        "cmes-h1-2026"
+      ],
+      "sourcePages": {
+        "cmes-h1-2026": [
+          36
+        ]
+      }
+    },
+    {
+      "id": "d-0233",
+      "previousStatus": "unverified",
+      "status": "supported-disclosure",
+      "ruling": "原表行明确为招商轮船601872，每股0.25元=每10股2.5元，除息及发放2026-07-10，与末期实施公告一致。此前公司错位误报撤回。",
+      "sources": [
+        "cmes-dividend-2025"
+      ],
+      "sourcePages": {
+        "cmes-dividend-2025": [
           1,
           2
         ]
@@ -1643,5 +1643,6 @@
         ]
       }
     }
-  ]
+  ],
+  "selfCorrection": "线上逐项验收识别4个分红误报：原表公司顺序为海能、轮船，原值正确；按公司代码与实施原文纠正，保留自查记录。"
 }
