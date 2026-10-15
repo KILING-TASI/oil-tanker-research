@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "public-validation/1",
+  "repository": "oil-tanker-research",
+  "registeredOn": "2026-10-15",
+  "hashFormat": "UTF-8 with LF newlines; BOM ignored; original response hashes remain in original receipts",
+  "coverage": "no-eligible-public-inputs",
+  "sourceAuthenticityCertified": false,
+  "evidence": [],
+  "checkFiles": [],
+  "gaps": [
+    "包内为合成条件算术；未内置或授权分发实际航线TCE序列",
+    "需使用有权取得的公司经营/航线/船型和现货敞口资料"
+  ],
+  "limits": "registry and selected counterexamples; no new original-document authentication or investment-effect certification"
+}

@@ -2,7 +2,7 @@
 
 从运输供需、有效运力和航线运价，分析油运公司的盈利、现金流与估值。按问题选择研究深度，独立核对事实，再组织综合判断。
 
-[Skill入口](skill/SKILL.md) · [研究框架](skill/references/research-framework.md) · [在线介绍](https://kiling-tasi.github.io/oil-tanker-research/) · [MIT](LICENSE)
+[下载v0.1.0安装包](https://github.com/KILING-TASI/oil-tanker-research/releases/tag/v0.1.0) · [Skill入口](skill/SKILL.md) · [研究框架](skill/references/research-framework.md) · [在线介绍](https://kiling-tasi.github.io/oil-tanker-research/) · [MIT](LICENSE)
 
 ## 使用
 
@@ -42,3 +42,7 @@ python -m unittest discover -s tests -v
 独立包包含中文调用入口、全部引用与脚本、合成示例、许可证和SHA256清单。解压后的`oil-tanker-research`目录可按助手规则安装。打包工具拒绝覆盖已有文件。当前检查范围见[VALIDATION.md](VALIDATION.md)。
 
 原创代码及模板采用MIT；第三方公告、研报、数据和代码保留各自权利范围，见[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+## 公开底稿验收
+
+[覆盖登记](PUBLIC_VALIDATION.json)区分公开事实、混合教学与尚缺样本。运行 `python tools/verify_public_validation.py --run-checks --output reports/public-validation-v1.json` 可核对冻结文本与已登记反例；重复运行使用新文件。通过不表示重新认证原文或真实市场效果，未取得的样本仍列为缺口。
